@@ -1,0 +1,16 @@
+h1 {
+    font-weight: 800; font-size: 5rem;
+    /* 처음과 마지막 컬러의 색을 일치시켜야 끊기는 느낌 없이 자연스럽다 */
+    background: linear-gradient(to right, aqua, lime, pink, aqua); /* 배경에 컬러를 넣는다 */
+    /* 글자안에 그라디언트 넣는 속성 */
+    -webkit-background-clip:text;
+    -webkit-text-fill-color: transparent;
+    /* 사이즈가 커야 움직일 수 있으므로 백그라운드 사이즈를 크게 한다 */
+    background-size: 400%;
+    animation:text_bg 10s linear infinite;
+}
+/* 글자 움직이려면 애니메이션 */
+@keyframes text_bg {
+    0% {background-position-x: 100% ;}
+    100% {background-position-x: 400% ;}
+}

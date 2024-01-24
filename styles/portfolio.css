@@ -1,0 +1,182 @@
+body, html {scroll-behavior: smooth;}
+/* intro page */
+/* intro page - header */
+header {
+    width: 100%; height: 80px;
+    position: fixed; top:0; left: 0; z-index: 900;
+    display: flex; flex-flow:row nowrap; align-items: center; justify-content: left;
+    padding:  30px;
+    margin:0 auto;
+    background:#111;
+}
+header h1 {margin-right: 50px;}
+header h1 a {color:#fff;}
+header nav {}
+header nav .gnb {display: flex;}
+header nav .gnb li {margin-right: 50px; position: relative;}
+header nav .gnb > li > a {
+    color: #fff; font-weight: 300;
+}
+header nav .gnb > li:nth-child(2) > .lnb {
+    display: none !important;
+    padding: 10px; 
+    display: flex; flex-flow: row nowrap;
+    justify-content: center; 
+    position: absolute; left: -10px; top: 30px;
+    text-align: center;
+}
+header nav .gnb > li:nth-child(2) > .lnb > a:last-child {
+    border-left: 0;
+}
+header nav .gnb > li:nth-child(2) > .lnb > a {
+    font-size: 0.85rem;
+    font-weight: 300;
+    color: #fff;
+    display: inline-block;
+    width: 130px;
+    padding: 10px 0;
+    border: 1px solid #777;
+    background: #111;
+}
+/* intro page - container */
+main {}
+main .intro {
+    position: relative;
+    background: #111;
+    width:100%; height: 100vh;
+    display: flex; flex-flow:row nowrap;
+    justify-content: space-between;
+}
+main .intro .left {
+    display: flex; flex-flow: column nowrap;
+    justify-content: end;
+    padding: 0px 0px 130px 50px;
+    text-align: left;
+}
+main .intro .left h1 {
+    color:#fff; font-size: 6rem; font-weight: 800;
+    letter-spacing: 0.2rem;
+}
+main .intro .left h1:nth-child(1) {font-size: 5rem;}
+main .intro .left h1:nth-child(2) {font-weight: 800;}
+main .intro .right {
+    display: flex; align-items: start;
+    padding: 150px 130px 0 0;
+}
+main .intro .right .text {text-align: right;}
+main .intro .right .text h2 {
+    color:#fff; font-size: 4rem; font-weight: 200;
+    letter-spacing: 0.1rem;
+}
+main .intro .right .text h2:nth-child(1) {}
+main .intro .right .text h2:nth-child(2) {}
+main .intro .right .text h3 {
+    color:#fff; font-size: 2.3rem;
+    padding-top: 30px;
+    letter-spacing: 0.1rem;
+    font-weight: 200;
+}
+main .intro .right .shape {
+    position: absolute; right: 0px;
+    bottom: 80px;
+    padding: 150px 130px 0 0;
+}
+main .intro .right .shape .one {
+    height: 100px; width: 100px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    display: block;    
+}
+main .intro .right .shape .arr {
+    position: absolute; right: 32px; bottom: 10px;
+    display: flex; flex-flow: column nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 150px 130px 0 0;
+}
+main .intro .right .shape .arr span:nth-child(1)  {
+    width: 2px; height: 70px;
+    background: #fff;
+    display: block;
+}
+main .intro .right .shape .arr span:nth-child(2) {
+    width: 40px; height: 2px;
+    background: #fff;
+    display: block;
+    transform: rotate(-225deg) translate(-50%, -50%);
+}
+main .intro .right .shape .arr span:nth-child(3) {
+    width: 40px; height: 2px;
+    background: #fff;
+    display: block;
+    transform: rotate(45deg) translate(-50%, -50%);
+}
+/* protfolio */
+main .portfolio {width: 100%;}
+/* protfolio - 타이틀 */
+main .portfolio .title {width: 100%;}
+main .portfolio .title h1 {margin: 0 auto;}
+main .portfolio .container {}
+main .portfolio .container .contents {
+    display: flex; flex-flow: row nowrap; 
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 60px 50px;
+}
+/* protfolio - 왼쪽 설명글 */
+main .portfolio .container .contents .text {
+    text-align: left; width: 45%;
+}
+main .portfolio .container .contents .text h1 {font-size: 2.3rem; font-weight: 700;}
+main .portfolio .container .contents .text p {font-size: 1.8rem; font-weight: 300;}
+/* protfolio - 오른쪽 컨테이너 - 타이틀 */
+main .portfolio .container .contents .list {width: 55%;}
+main .portfolio .container .contents .list .info {
+    background: #111; padding: 15px 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+main .portfolio .container .contents .list .info h3 {
+    font-weight: 600; font-size: 1.25rem;
+    color:#fff;
+}
+main .portfolio .container .contents .list .info p {color:#fff;}
+/* protfolio - 오른쪽 컨테이너 작은박스 - 링크영역 */
+main .portfolio .container .contents .list .link_area {
+    display: flex; justify-content: space-between; align-items: center;
+}
+main .portfolio .container .contents .list .link_area .box {
+    border: 1px solid #222;
+    border-radius: 10px;
+    display: flex; flex-flow: column nowrap;
+    width: calc((100% / 2) - 10px);
+    padding: 20px 10px;  
+    height: 180px;
+}
+main .portfolio .container .contents .list .link_area .box .top {
+    display: flex; justify-content: space-between; align-items: center;
+    position: relative; padding: 13px;
+}
+main .portfolio .container .contents .list .link_area .box .top .logo {}
+main .portfolio .container .contents .list .link_area .box .top .logo img {
+    width: 55px;
+}
+main .portfolio .container .contents .list .link_area .box .top .arrow {
+    position: relative; 
+    display: flex; flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+main .portfolio .container .contents .list .link_area .box .top .arrow img {width: 30px}
+main .portfolio .container .contents .list .link_area .box .comment {
+    padding: 10px;
+}
+main .portfolio .container .contents .list .link_area .box .comment p:nth-child(1) {
+    font-weight: 600; font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+main .portfolio .container .contents .list .link_area .box .comment p:nth-child(2) {}
+/* profile */
+main .profile {
+    width: 100%; height: 100vh;
+}
