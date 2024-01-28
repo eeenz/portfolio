@@ -2,22 +2,34 @@ body, html {scroll-behavior: smooth;}
 /* intro page */
 /* intro page - header */
 header {
-    width: 100%; height: 80px;
-    position: fixed; top:0; left: 0; z-index: 900;
-    display: flex; flex-flow:row nowrap; align-items: center; justify-content: left;
-    padding:  30px;
-    margin:0 auto;
-    background:#111;
+    width: 80px; height: 100vh;
+    position: fixed; top:0; right: 0; z-index: 900;
+    background:#333;
 }
-header h1 {margin-right: 50px;}
-header h1 a {color:#fff;}
-header nav {}
-header nav .gnb {display: flex;}
-header nav .gnb li {margin-right: 50px; position: relative;}
-header nav .gnb > li > a {
+header nav .gnb {
+    display: flex; 
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; height: 100vh;
+    padding: 50px 0px 150px;
+    margin: 0 auto;
+}
+header nav .gnb li {
+    position: relative; 
+    transform: rotate(90deg);
+}
+header nav > .gnb > li > a {
     color: #fff; font-weight: 300;
 }
-header nav .gnb > li:nth-child(2) > .lnb {
+header nav .gnb > li:nth-child(1) span {
+    content: '';
+    display: block;
+    background-color: #fff;
+    width: 20px; height: 2px;
+    margin-bottom: 6px;
+}
+header nav .gnb > li:nth-child(3) > .lnb {
     display: none !important;
     padding: 10px; 
     display: flex; flex-flow: row nowrap;
@@ -25,10 +37,10 @@ header nav .gnb > li:nth-child(2) > .lnb {
     position: absolute; left: -10px; top: 30px;
     text-align: center;
 }
-header nav .gnb > li:nth-child(2) > .lnb > a:last-child {
+header nav .gnb > li:nth-child(3) > .lnb > a:last-child {
     border-left: 0;
 }
-header nav .gnb > li:nth-child(2) > .lnb > a {
+header nav .gnb > li:nth-child(3) > .lnb > a {
     font-size: 0.85rem;
     font-weight: 300;
     color: #fff;
@@ -38,52 +50,78 @@ header nav .gnb > li:nth-child(2) > .lnb > a {
     border: 1px solid #777;
     background: #111;
 }
+.curcle_bar {
+    position: fixed; top: 50vh;
+    z-index: 700;
+    margin-left: 30px;
+}
+.curcle_bar span:nth-child(1) {
+    content: '';
+    display: block;
+    background-color: #066bf9;
+    width: 7px; height: 30px;
+    margin-bottom: 3px;
+    border-radius: 20px;
+}
+.curcle_bar span {
+    content: '';
+    display: block;
+    background-color: #333;
+    width: 7px; height: 7px;
+    margin-bottom: 3px;
+    border-radius: 50%;
+}
 /* intro page - container */
-main {}
+main {
+    background: #f3f3f3;
+}
 main .intro {
     position: relative;
     background: #111;
     width:100%; height: 100vh;
     display: flex; flex-flow:row nowrap;
     justify-content: space-between;
+    padding: 100px 140px 140px;
 }
 main .intro .left {
     display: flex; flex-flow: column nowrap;
     justify-content: end;
-    padding: 0px 0px 130px 50px;
     text-align: left;
 }
 main .intro .left h1 {
-    color:#fff; font-size: 6rem; font-weight: 800;
+    color:#fff; font-size: 11rem; font-weight: 900;
     letter-spacing: 0.2rem;
 }
-main .intro .left h1:nth-child(1) {font-size: 5rem;}
-main .intro .left h1:nth-child(2) {font-weight: 800;}
+main .intro .left h1:nth-child(1) {}
+main .intro .left h1:nth-child(2) {
+    border-top: 1px solid #777;
+    border-bottom: 1px solid #777;
+}
 main .intro .right {
     display: flex; align-items: start;
-    padding: 150px 130px 0 0;
+    padding: 50px 110px 0 0;
 }
 main .intro .right .text {text-align: right;}
 main .intro .right .text h2 {
-    color:#fff; font-size: 4rem; font-weight: 200;
-    letter-spacing: 0.1rem;
+    color:#fff; font-size: 6rem; font-weight: 200;
+    letter-spacing: 0.1rem; 
 }
 main .intro .right .text h2:nth-child(1) {}
 main .intro .right .text h2:nth-child(2) {}
 main .intro .right .text h3 {
-    color:#fff; font-size: 2.3rem;
-    padding-top: 30px;
-    letter-spacing: 0.1rem;
-    font-weight: 200;
+    color:#066bf9; font-size: 2rem;
+    padding: 40px 10px 0 0;
+    letter-spacing: 0.15rem;
+    font-weight: 400;
 }
 main .intro .right .shape {
     position: absolute; right: 0px;
     bottom: 80px;
-    padding: 150px 130px 0 0;
+    padding: 150px 260px 70px 0;
 }
 main .intro .right .shape .one {
     height: 100px; width: 100px;
-    border: 2px solid #fff;
+    border: 2px solid #777;
     border-radius: 50%;
     display: block;    
 }
@@ -92,66 +130,117 @@ main .intro .right .shape .arr {
     display: flex; flex-flow: column nowrap;
     justify-content: flex-end;
     align-items: center;
-    padding: 150px 130px 0 0;
+    padding: 150px 260px 70px 0;
 }
 main .intro .right .shape .arr span:nth-child(1)  {
     width: 2px; height: 70px;
-    background: #fff;
+    background: #777;
     display: block;
 }
 main .intro .right .shape .arr span:nth-child(2) {
     width: 40px; height: 2px;
-    background: #fff;
+    background: #777;
     display: block;
     transform: rotate(-225deg) translate(-50%, -50%);
 }
 main .intro .right .shape .arr span:nth-child(3) {
     width: 40px; height: 2px;
-    background: #fff;
+    background: #777;
     display: block;
     transform: rotate(45deg) translate(-50%, -50%);
 }
 /* protfolio */
-main .portfolio {width: 100%;}
+main .portfolio {
+    width: 100%;
+    padding: 0 150px;
+}
 /* protfolio - 타이틀 */
-main .portfolio .title {width: 100%;}
-main .portfolio .title h1 {margin: 0 auto;}
+main .portfolio .title {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 100px;
+}
+main .portfolio .title h1 {
+    font-size: 3rem;
+    padding-top: 150px;
+}
+main .portfolio .title p {
+    font-size: 1.25rem;
+    padding: 6px 20px;
+    border: 1px solid #111;
+    display: inline-block;
+    border-radius: 40px;
+    margin-top: 40px;
+}
 main .portfolio .container {}
 main .portfolio .container .contents {
     display: flex; flex-flow: row nowrap; 
     justify-content: space-between;
     align-items: flex-start;
-    padding: 60px 50px;
+    margin: 200px 0;
 }
 /* protfolio - 왼쪽 설명글 */
 main .portfolio .container .contents .text {
-    text-align: left; width: 45%;
+    text-align: left; width: 40%;
 }
-main .portfolio .container .contents .text h1 {font-size: 2.3rem; font-weight: 700;}
-main .portfolio .container .contents .text p {font-size: 1.8rem; font-weight: 300;}
+main .portfolio .container .contents .text h1 {
+    font-size: 6rem; font-weight: 700;
+}
+main .portfolio .container .contents .text p {
+    font-size: 2rem; font-weight: 300;
+    margin-top: 20px;
+}
 /* protfolio - 오른쪽 컨테이너 - 타이틀 */
 main .portfolio .container .contents .list {width: 55%;}
 main .portfolio .container .contents .list .info {
-    background: #111; padding: 15px 20px;
-    border-radius: 10px;
+    padding: 30px 20px;
     margin-bottom: 20px;
+    border-top: 1px solid #111;
+    border-bottom: 1px solid #111;
+    height: 200px;
 }
 main .portfolio .container .contents .list .info h3 {
-    font-weight: 600; font-size: 1.25rem;
-    color:#fff;
+    font-size: 4rem;
+    color:#111;
 }
-main .portfolio .container .contents .list .info p {color:#fff;}
+/* main .portfolio .container .contents1 .list .info p {
+    color:#d50057;  font-size: 1.25rem; font-weight: 800;
+    margin-top: 20px;
+}
+main .portfolio .container .contents2 .list .info p {
+    color:#003314;  font-size: 1.25rem; font-weight: 800;
+    margin-top: 20px;
+} */
+main .portfolio .container .contents .list .info p {
+    color:#111;  font-size: 1.25rem; font-weight: 800;
+    margin-top: 20px;
+}
 /* protfolio - 오른쪽 컨테이너 작은박스 - 링크영역 */
 main .portfolio .container .contents .list .link_area {
     display: flex; justify-content: space-between; align-items: center;
+    margin-top: 50px;
+}
+/* main .portfolio .container .contents1 .list .link_area .box:hover {
+    box-shadow: 10px 10px 0 #d50057;
+    transition: 0.3s linear;
+}
+main .portfolio .container .contents2 .list .link_area .box:hover {
+    box-shadow: 10px 10px 0 #003314;
+    transition: 0.3s linear;
+} */
+main .portfolio .container .contents .list .link_area .box:hover {
+    box-shadow: 10px 10px 0 #066bf9;
+    transition: 0.3s linear;
 }
 main .portfolio .container .contents .list .link_area .box {
     border: 1px solid #222;
-    border-radius: 10px;
+    border-radius: 6px;
     display: flex; flex-flow: column nowrap;
-    width: calc((100% / 2) - 10px);
+    width: calc((100% / 2) - 16px);
     padding: 20px 10px;  
     height: 180px;
+    box-shadow: 10px 10px 0 #222;
 }
 main .portfolio .container .contents .list .link_area .box .top {
     display: flex; justify-content: space-between; align-items: center;
@@ -159,7 +248,7 @@ main .portfolio .container .contents .list .link_area .box .top {
 }
 main .portfolio .container .contents .list .link_area .box .top .logo {}
 main .portfolio .container .contents .list .link_area .box .top .logo img {
-    width: 55px;
+    height: 30px;
 }
 main .portfolio .container .contents .list .link_area .box .top .arrow {
     position: relative; 
@@ -172,11 +261,33 @@ main .portfolio .container .contents .list .link_area .box .comment {
     padding: 10px;
 }
 main .portfolio .container .contents .list .link_area .box .comment p:nth-child(1) {
-    font-weight: 600; font-size: 1.25rem;
-    margin-bottom: 10px;
+    font-weight: 700; font-size: 2rem;
+    margin-bottom: 5px;
 }
 main .portfolio .container .contents .list .link_area .box .comment p:nth-child(2) {}
 /* profile */
 main .profile {
     width: 100%; height: 100vh;
+    background: #111;
+    padding: 0 150px;
 }
+main .profile .about_title {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+main .profile .about_title h1 {
+    font-size: 8rem;
+    padding-top: 150px;
+    color: #fff;
+}
+main .profile .contaienr {display: flex;}
+main .profile .contaienr .left_img {}
+main .profile .contaienr .left_img img {}
+main .profile .contaienr .info { margin-left: 200px;}
+main .profile .contaienr .info .skill {}
+main .profile .contaienr .info .skill h3 {
+    color: #fff; font-size: 3.5rem;
+}
+main .profile .contaienr .info .skill a {}
+main .profile .contaienr .info .skill a img {height: 50px; margin-right: 5px;}
