@@ -1,0 +1,107 @@
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+body main .area {
+  width: 100%;
+  height: 100vh;
+}
+body main .port_designer .web_page .swiper.swiper1 {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-right: 20px;
+}
+body main .port_designer .web_page .swiper.swiper1 .swiper-wrapper .swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 400px;
+}
+body main .port_designer .web_page .swiper.swiper1 .swiper-wrapper .swiper-slide .swiper-slide img {
+  background-color: aqua;
+  display: block;
+  width: 100%;
+}
+body main .port_designer .contents_box .lookbook .swiper2 {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+body main .port_designer .contents_box .lookbook .swiper2 .swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 50%;
+  height: 70vh;
+}
+body main .port_designer .contents_box .lookbook .swiper2 .swiper-slide .swiper-slide img {
+  display: block;
+  width: 100%;
+}
+body main .port_designer .contents_box .viral {
+  background: #eee;
+  position: relative;
+  color: #000;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+body main .port_designer .contents_box .viral .swiper3 {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+}
+body main .port_designer .contents_box .viral .swiper3 .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  height: calc((100% - 40px) / 3) !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body main .port_designer .banner_box {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+body main .port_designer .banner_box .swiper4 {
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+body main .port_designer .banner_box .swiper4 .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+body main .port_designer .banner_box .swiper4 .swiper-slide .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body main .profile {
+  height: 100vh;
+  background-color: #111;
+}/*# sourceMappingURL=main.css.map */
