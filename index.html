@@ -7,7 +7,7 @@
     <!-- <meta name="keywords" content="프론트엔드, frontend,html,css,javascript"> -->
     <!-- font -->
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;0,9..40,1000;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,900;1,9..40,1000&family=Noto+Sans+KR:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <!-- font-family: 'DM Sans', 'Noto Sans KR', sans-serif; -->
+    <!-- font-family: 'DM Sans', font-family: 'Noto Sans KR', font-family: NewYork; -->
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!--플러그인 필수 css cdn 연결-->
@@ -20,31 +20,27 @@
 </head>
 <body>
     <header>
-        <div class="menu_bar">
-            <a href="#">
-                <span></span>
-                <span></span>
-                <span></span>
-            </a>
-        </div>
-        <div class="logo_toggle">
-            <div class="toggle_bg">
-                <a href="#" class="toggle_active">
-                    <p>front-end developer</p>
-                </a>
+        <div class="h_left">
+            <div class="menu_bar">
                 <a href="#">
-                    <p>web designer</p>
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </a>
+            </div>
+            <div class="logo_toggle">
+                <div class="toggle_bg">
+                    <a href="#">front-end developer</a>
+                    <a href="#">web designer</a> 
+                </div>
             </div>
         </div>
         <nav>
-            <ul>
-                <li><a href="#">MAIN</a></li>
-                <li><a href="#">PORTFOLIO<span>(Developer)</span></a></li>
-                <li><a href="#">PORTFOLIO<span>(Desinger)</span></a></li>
-                <li><a href="#">PROFILE</a></li>
-                <li><a href="#">ABOUT</a></li>
-            </ul>
+            <a href="#">INTRO</a>
+            <a href="#">PORTFOLIO<span>(front-end)</span></a>
+            <a href="#">PORTFOLIO<span>(designer)</span></a>
+            <a href="#">PROFILE</a>
+            <a href="#">ABOUT</a>
         </nav>
     </header>
     <div class="curcle_bar">
@@ -54,14 +50,46 @@
         <span></span>
     </div>
     <main>
+        <div class="menu_info display_none">
+            <div class="menu_top">
+                <div class="menu_bar">
+                    <a href="#">
+                        <span></span>
+                        <span></span>
+                    </a>
+                </div>
+            </div>
+            <div class="text_box">
+                <a href="#">INTRO</a>
+                <a href="#">PORTFOLIO<span>(front-end)</span></a>
+                <a href="#">PORTFOLIO<span>(designer)</span></a>
+                <a href="#">PROFILE</a>
+                <a href="#">ABOUT</a>
+            </div>
+        </div>
         <!-- intro -->
         <div class="area intro">
-            <h1>PORTFOLIO</h1>
-            <p>front-end developer</p>
-            <div class="img_animation">
-                <a href="#"><img src="#" alt="">img</a>
-                <a href="#"><img src="#" alt="">img</a>
-                <a href="#"><img src="#" alt="">img</a>
+            <div class="intro_front">
+                <h1>Eunji Kim</h1>
+                <h1>PORTFOLIO</h1>
+                <p>front-end developer</p>
+                <div class="img_animation">
+                    <div class="circle"><img src="./images/intro/obj_logo.png" alt=""></div>
+                    <div class="dollar"><img src="./images/intro/obj_dollar.png" alt=""></div>
+                    <div class="flower"><img src="./images/intro/obj_flower.png" alt=""></div>
+                </div>
+            </div>
+            <div class="intro_web display_none">
+                <h1>Eunji Kim</h1>
+                <h1>PORTFOLIO</h1>
+                <h3>2024</h3>
+                <p>Web Designer</p>
+                <p>Package Designer</p>
+                <p>Visual Designer</p>
+                <p>UI/UX Designer</p>
+                <div class="img_animation">
+                    <div class="flower"><img src="./images/intro/obj_flower.png" alt=""></div>
+                </div>
             </div>
         </div>
         <!-- portfolio ** developer -->
@@ -70,8 +98,10 @@
                 <div class="left"><p>CloneCodding</p></div>
                 <div class="center">
                     <div class="icon_move_down">
-                        <span><img src="#" alt=""></span>
-                        <span>chapter 1</span>
+                        <div class="round"></div>
+                        <div class="scroll_line"></div>
+                        <!-- <span><img src="#" alt=""></span> -->
+                        <!-- <span>chapter 1</span> -->
                     </div>
                 </div>
                 <div class="right"><p>& App</p></div>
@@ -81,7 +111,7 @@
                     <div class="project_left">
                         <p>01</p>
                         <h2>Team Project</h2>
-                        <p class="brand_name">Market Kurly</p>
+                        <p class="brand_name">MARKET KURLY</p>
                         <div class="hashtag">
                             <span>#JavaScript</span>
                             <span>#HTML</span>
@@ -116,7 +146,7 @@
                     <div class="project_left">
                         <p>03</p> 
                         <h2>Team Project</h2>
-                        <p class="brand_name">Creative APP</p>
+                        <p class="brand_name">CREATIVE APP</p>
                         <div class="hashtag">
                             <span>#APP design</span>
                             <span>#UI/UX</span>
@@ -131,42 +161,76 @@
             <!-- 상세페이지 -->
             <div class="web_page">
                 <div class="designer_top">
-                    <div class="deco_circle">
-                        <img src="#" alt="">
-                    </div>
                     <div class="deco_text">
-                        <p><img src="#" alt=""></p>
+                        <p>WEB DESIGN</p>
+                        <p>PRODUCT</p>
+                        <p>PAGE</p>
+                        <p>*</p>
+                        <p>WEB DESIGN</p>
+                        <p>PRODUCT</p>
+                        <p>PAGE</p>
+                        <p>*</p>
+                        <p>WEB DESIGN</p>
+                        <p>PRODUCT</p>
+                        <p>PAGE</p>
+                        <p>*</p>
+                        <p>WEB DESIGN</p>
+                        <p>PRODUCT</p>
+                        <p>PAGE</p>
+                        <p>*</p>
+                        <p> </p>
+                    </div>
+                    <div class="deco_circle">
+                        <!-- <img src="#" alt=""> -->
                     </div>
                 </div>
                 <!-- Swiper ** start coverflow -- 상세페이지 스와이퍼 -->
                 <div class="swiper swiper1">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <img src="#" alt="">
+                            <img src="./images/portfolio/thumb/05.jpg" alt="">
                         </div>
                         <div class="swiper-slide">
-                            <img src="#" alt="">
+                            <img src="./images/portfolio/thumb/06.jpg" alt="">
                         </div>
                         <div class="swiper-slide">
-                            <img src="#" alt="">
+                            <img src="./images/portfolio/thumb/07.jpg" alt="">
                         </div>
                         <div class="swiper-slide">
-                            <img src="#" alt="">
+                            <img src="./images/portfolio/thumb/02.jpg" alt="">
                         </div>
                         <div class="swiper-slide">
-                            <img src="#" alt="">
+                            <img src="./images/portfolio/thumb/10.jpg" alt="">
                         </div>
                         <div class="swiper-slide">
-                            <img src="#" alt="">
+                            <img src="./images/portfolio/thumb/09.jpg" alt="">
                         </div>
                         <div class="swiper-slide">
-                            <img src="#" alt="">
+                            <img src="./images/portfolio/thumb/08.jpg" alt="">
                         </div>
                         <div class="swiper-slide">
-                            <img src="#" alt="">
+                            <img src="./images/portfolio/thumb/15.jpg" alt="">
                         </div>
                         <div class="swiper-slide">
-                            <img src="#" alt="">
+                            <img src="./images/portfolio/thumb/14.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/portfolio/thumb/16.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/portfolio/thumb/11.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/portfolio/thumb/13.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/portfolio/thumb/01.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/portfolio/thumb/03.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/portfolio/thumb/04.jpg" alt="">
                         </div>
                     </div>
                     <div class="swiper-pagination"></div>
@@ -185,18 +249,27 @@
                     <!-- Swiper ** start cube -- 룩북 스와이퍼 -->
                     <div class="swiper swiper2">
                         <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <img src="#" alt="">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="#" alt="">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="#" alt="">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="#" alt="">
-                        </div>
+                            <div class="swiper-slide">
+                                <img src="./images/portfolio/lookbook/01.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/portfolio/lookbook/02.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/portfolio/lookbook/03_.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/portfolio/lookbook/04.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/portfolio/lookbook/05.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/portfolio/lookbook/06.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/portfolio/lookbook/07_test.jpg" alt="">
+                            </div>
                         </div>
                         <div class="swiper-pagination"></div>
                     </div>
@@ -204,8 +277,9 @@
                         <h2>Lookbook / Viral / Banner</h2>
                         <div class="sub_comment">
                             <p>Contents</p>
-                            <p>comment comment comment comment comment comment comment comment comment comment comment comment comment comment comment comment comment comment comment comment comment comment comment comment comment comment comment comment comment comment comment comment</p>
-                            <p>more view →</p>
+                            <p>comment comment comment comment comment comment comment comment comment comment comment comment comment comment comment comment comment comment comment comment comment comment comment comment
+                                <span>more view →</span>
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -213,23 +287,59 @@
                     <!-- Swiper -->
                     <div class="swiper swiper3">
                         <div class="swiper-wrapper">
-                        <div class="swiper-slide">Slide 1</div>
-                        <div class="swiper-slide">Slide 2</div>
-                        <div class="swiper-slide">Slide 3</div>
-                        <div class="swiper-slide">Slide 4</div>
-                        <div class="swiper-slide">Slide 5</div>
-                        <div class="swiper-slide">Slide 6</div>
-                        <div class="swiper-slide">Slide 7</div>
-                        <div class="swiper-slide">Slide 8</div>
-                        <div class="swiper-slide">Slide 9</div>
+                            <div class="swiper-slide">
+                                <img src="./images/portfolio/SNS/009.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/portfolio/SNS/009.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/portfolio/SNS/009.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/portfolio/SNS/009.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/portfolio/SNS/009.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/portfolio/SNS/009.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/portfolio/SNS/009.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/portfolio/SNS/009.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/portfolio/SNS/009.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/portfolio/SNS/009.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/portfolio/SNS/009.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/portfolio/SNS/009.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/portfolio/SNS/009.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/portfolio/SNS/009.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/portfolio/SNS/009.jpg" alt="">
+                            </div>
                         </div>
                         <div class="swiper-pagination"></div>
                     </div>
                 </div>
             </div>
-            <div class="banner_box">
+            <!-- <div class="banner_box"> -->
                 <!-- 컨텐츠( 배너 ) -->
-                <div class="swiper swiper4">
+                <!-- <div class="swiper swiper4">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">Slide 1</div>
                         <div class="swiper-slide">Slide 2</div>
@@ -242,13 +352,40 @@
                     <div class="swiper-pagination"></div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- profile -->
         <div class="area profile">
-            <h2>Skill</h2>
+            <div class="pro_left">
+                <h2>About</h2>
+                <p>/</p>
+                <h3>{ 코드로 감성을 그리다 }</h3>
+                <p>안녕하세요<br>사용자 경험을 최우선으로 생각하며,<br>사용자들이 편안하고 직관적으로 서비스를 이용할 수 있도록 고민하고<br>매력적인 디자인을 하려 노력하는 개발자 김은지 입니다.</p>
+                <p><img src="./images/about/avatar.png" alt=""></p>
+            </div>
+            <div class="pro_right">
+                <h2>Skill</h2>
+                <div class="skill_box">
+                    <a href="#"><img src="./images/skill_icon/01.jpg" alt=""></a>
+                    <a href="#"><img src="./images/skill_icon/02.jpg" alt=""></a>
+                    <a href="#"><img src="./images/skill_icon/03.jpg" alt=""></a>
+                    <a href="#"><img src="./images/skill_icon/04.jpg" alt=""></a>
+                    <a href="#"><img src="./images/skill_icon/05.jpg" alt=""></a>
+                    <a href="#"><img src="./images/skill_icon/06.jpg" alt=""></a>
+                    <a href="#"><img src="./images/skill_icon/07.jpg" alt=""></a>
+                    <a href="#"><img src="./images/skill_icon/08.jpg" alt=""></a>
+                    <a href="#"><img src="./images/skill_icon/09.jpg" alt=""></a>
+                    <a href="#"><img src="./images/skill_icon/10.jpg" alt=""></a>
+                    <a href="#"><img src="./images/skill_icon/11.jpg" alt=""></a>
+                    <a href="#"><img src="./images/skill_icon/12.jpg" alt=""></a>
+                </div>
+            </div>
         </div>
         <!-- about -->
-        <div class="area about"></div>
+        <div class="area about">
+            <!-- <p><img src="./images/about/ellipse_1.png" alt=""></p> -->
+            <p>{ 귀한 시간으로 포트폴리오를 확인해 주셔서 감사합니다. }</p>
+            <h2>THANKS</h2>
+        </div>
     </main>
     <!-- footer -->
     <footer></footer>
@@ -262,15 +399,17 @@
         /*   Initialize Swiper -- coverflow -- portfolio_designer   */
         let swiper1 = new Swiper(".swiper1", {
             effect: "coverflow",
+            loop: true,
             grabCursor: true,
-            centeredSlides: true,
-            slidesPerView: "auto",
+            slidesPerView:4, //슬라이드 한번에 4개씩 보이기
+            spaceBetween:50, //슬라이드 여백
+            centeredSlides:true, //슬라이드의 기준을 가운데부터 시작하도록 설정하기
             coverflowEffect: {
                 rotate: 0,
                 stretch: 0,
-                depth: 100,
-                modifier: 1,
-                slideShadows: true,
+                // depth: 300,
+                // modifier: 1,
+                // slideShadows: true,
             },
             pagination: {
                 el: ".swiper-pagination",
@@ -280,6 +419,7 @@
         let swiper2 = new Swiper(".swiper2", {
             effect: "cube",
             grabCursor: true,
+            loop: true,
             cubeEffect: {
                 shadow: true,
                 slideShadows: true,
@@ -292,7 +432,7 @@
         });
         /*   Initialize Swiper -- portfolio_viral   */
         let swiper3 = new Swiper(".swiper3", {
-            slidesPerView: 2,
+            slidesPerView: 3,
             grid: {
                 rows: 3,
             },

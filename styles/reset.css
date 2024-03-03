@@ -1,3 +1,8 @@
+/* fonts */
+@font-face {
+    font-family: NewYork; 
+    src: url(../font/NewYork.otf);
+}
 html,body,* {box-sizing:border-box;}
 html,body,h1,h2,h3,h4,h5,h6,
 p,em,strong,a,span,sub,sup,del,q,blockquote,code,
@@ -11,8 +16,9 @@ address,details,mark,time,video,img,summary,div {
     line-height:1.3; 
     color:#111;
     text-decoration:none;
-    font-family: 'DM Sans', 'Noto Sans KR', sans-serif;
+    font-family: 'DM Sans', 'Noto Sans KR', 'NewYork', sans-serif;
     font-weight:400;
+    letter-spacing: -0.02rem;
 }
 ul,ol,li {list-style:none;}
 button {cursor:pointer; background: 0; border: 0;}
