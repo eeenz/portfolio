@@ -386,6 +386,12 @@
             <p>{ 귀한 시간으로 포트폴리오를 확인해 주셔서 감사합니다. }</p>
             <h2>THANKS</h2>
         </div>
+        <div class="wrap">
+            <div class="container">1</div>
+            <div class="container"><h1>2</h1></div>
+            <div class="container"><h1>3</h1></div>
+            <div class="container"><h1>4</h1></div>
+        </div>
     </main>
     <!-- footer -->
     <footer></footer>
@@ -456,6 +462,25 @@
                 prevEl: ".swiper-button-prev",
             },
         });
+        // 
+        /*  const wrap = document.querySelector('.wrap')
+        const container = document.querySelectorAll('.area')
+        let page = 0; //스크롤값 0, 초기값
+        console.log(wrap, container)
+        
+        //스크롤을 아래로 내릴 때 page++(음수처리되게) , 위로 올릴 때 page--(양수)
+        window.addEventListener('wheel',(e)=>{ //whell이벤트속성
+            console.log(e.deltaY) //deltaY : 세로 스크롤의 양을 반환하는 마우스 이벤트 속성
+            e.preventDefault() //새로고침 막기 //웹 브라우저가 우리도 모르게 스크롤할때 마다 페이지를 읽으면서 새로고침하는 특징이 있기때문에 새로고침 막아야한다. 
+            if(e.deltaY > 0){page++} //e: 매개변수자리에 이벤트 속성이 담기므로 매개변수에 이름을 짓고 불러온다.
+            if(e.deltaY < 0){page--}
+            if(page > container.length-1){ //page가 container.length(총4개) // page4 보다 커지지 않도록 설정
+                page = container.length-1
+            }
+            if(page < 0){page = 0}// 감소값 제한(page가 1container보다 위로 올라가지 않도록) //page가 0보다 작으면 page를 0값으로 고정해서 더이상 화면 위로 올라가지 않도록 설정
+                wrap.style.top = `${page*-100}vh` //묶고있는 div(wrap)의 좌표를 -100vh로 설정 (스크롤 내릴때 -100vh만큼 가야하니까)
+                console.log(`${page*-100}vh`) // -100vh(휠한번 할때마다) -> 위아래 모두 음수처리되는 문제점발생 -> 위아래 어느방향이든 deltaY의 아래방향으로 인식
+        },{passive:false}) //이전 스크롤 기다리지 않게하는 속성 //연속 스크롤할때는 기다리지 않고 쭉 내리는 경우가 많기 때문에 스크롤을 기다리지 않는 설정이 필요 */
     </script>
 </body>
 </html>  
