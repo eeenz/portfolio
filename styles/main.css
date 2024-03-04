@@ -6,9 +6,14 @@ body {
   scroll-behavior: smooth;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
 body {
   margin: 0;
   padding: 0;
+  -ms-overflow-style: none;
 }
 body header {
   width: 100%;
@@ -75,6 +80,13 @@ body header nav a {
 body header nav a span {
   font-weight: 800;
 }
+body main {
+  position: relative;
+  top: 0; /* 초기값설정 */
+  height: 100vh;
+  transition: all 0.8s;
+  scroll-behavior: smooth;
+}
 body main .menu_info {
   background-color: #fff;
   position: fixed;
@@ -131,8 +143,8 @@ body main .menu_info .text_box a span {
 }
 body main .area {
   width: 100%;
-  height: 100vh;
   line-height: 100vh; /* 스크롤이 4번 밑으로 안내려가게 설정 */
+  scroll-behavior: smooth;
 }
 body main .intro .intro_front {
   background-image: url(../images/intro/bg_wh_shadow.png);
@@ -204,6 +216,7 @@ body main .intro .intro_web {
   left: 0;
   width: 100%;
   background-color: #222;
+  display: block;
 }
 body main .intro .intro_web h1:nth-child(1) {
   font-family: "NewYork";
@@ -403,8 +416,11 @@ body main .port_developer .developer_container .project3 .project_right {
   filter: grayscale(100%);
 }
 body main .port_designer {
-  height: 100vh;
   width: 100%;
+}
+body main .port_designer .web_page {
+  height: 100vh;
+  padding-top: 55px;
 }
 body main .port_designer .web_page .deco_circle {
   border-bottom: 1px solid #333;
@@ -431,13 +447,13 @@ body main .port_designer .web_page .designer_top .deco_text p {
   letter-spacing: 0.04rem;
 }
 body main .port_designer .web_page .designer_comment {
-  padding-top: 10px;
+  padding-top: 20px;
   padding-bottom: 40px;
 }
 body main .port_designer .web_page .designer_comment h3 {
   font-size: 2.6rem;
   text-align: center;
-  line-height: 2.8rem;
+  line-height: 3rem;
 }
 body main .port_designer .web_page .designer_comment p {
   text-align: center;
@@ -458,6 +474,7 @@ body main .port_designer .web_page .swiper.swiper1 .swiper-wrapper .swiper-slide
   width: 100%;
 }
 body main .port_designer .contents_box {
+  height: 100vh;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -530,25 +547,24 @@ body main .port_designer .contents_box .contents_comment .sub_comment p:nth-chil
 body main .port_designer .contents_box .contents_comment .sub_comment p:nth-child(2) span {
   display: block;
 }
+body main .port_designer .banner_box {
+  height: 100vh;
+}
 body main .port_designer .banner_box .swiper4 {
   width: 100%;
-  height: 100%;
   margin-left: auto;
   margin-right: auto;
 }
-body main .port_designer .banner_box .swiper4 .swiper-slide {
-  text-align: center;
-  font-size: 18px;
+body main .port_designer .banner_box .swiper4 .swiper-wrapper .swiper-slide {
   background: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 80vh;
 }
-body main .port_designer .banner_box .swiper4 .swiper-slide .swiper-slide img {
+body main .port_designer .banner_box .swiper4 .swiper-wrapper .swiper-slide img {
   display: block;
   width: 100%;
-  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -622,6 +638,7 @@ body main .profile .pro_right .skill_box img {
   margin-bottom: 13px;
 }
 body main .about {
+  height: 100vh;
   display: flex;
   flex-flow: column nowrap;
   justify-content: flex-end;
