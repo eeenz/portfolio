@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>김은지 | SNS CONTENTS</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./images/icon/favicon.png" type="image/x-icon">
+    <link rel="icon" href="./images/icon/favicon_2.png" type="image/x-icon">
+    <!-- link -->
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/sns.css">
+</head>
+<body>
+    <main>
+        <div class="arrow_top">
+            <a href="#" id="go_to_top"><img src="./images/icon/arrow_top_bk.svg" alt="" ></a>
+        </div>
+        <div class="btn_box">
+            <a href="#"><img src="./images/icon/arrow_left_bk.svg" alt=""></a>
+        </div>
+        <div class="title_comment">
+            <!-- <h2>러브미모어 2021/ss 상세페이지입니다.</h2> -->
+            <!-- <p>제품 컨셉 기획부터 참여하여, 촬영을 진행습니다. <br> 
+                촬영은 인하우스 포토가 했고 촬영본을 가지고 편집 디자인을 진행했습니다.<br>
+                본인 참여도 100% 작업물입니다. </p> -->
+            <p>쿠오카 공동 구매 sns 이미지<br>(@kuoca_official)</p>
+            <p>▼</p>
+        </div>
+        <div class="sns_area">
+            <img src="./images/portfolio/SNS/page/017.jpg" alt="">
+            <img src="./images/portfolio/SNS/page/018.jpg" alt="">
+            <img src="./images/portfolio/SNS/page/019.jpg" alt="">
+            <img src="./images/portfolio/SNS/page/020.jpg" alt="">
+            <img src="./images/portfolio/SNS/page/021.jpg" alt="">
+            <img src="./images/portfolio/SNS/page/022.jpg" alt="">
+            <img src="./images/portfolio/SNS/page/023.jpg" alt="">
+            <img src="./images/portfolio/SNS/page/024.jpg" alt="">
+            <img src="./images/portfolio/SNS/page/025.jpg" alt="">
+            <img src="./images/portfolio/SNS/page/026.jpg" alt="">
+            <img src="./images/portfolio/SNS/page/027.jpg" alt="">
+            <img src="./images/portfolio/SNS/page/028.jpg" alt="">
+        </div>
+    </main>
+    <script>
+        /* ---------------------- 구분선 -------------------------- */  
+        // 뒤로가기 버튼
+        const btn_back = document.querySelector('.btn_box > a')
+        btn_back.addEventListener('click',()=>{
+            location.href = './index.html'; // 이전 페이지로 이동
+        })
+        /* ---------------------- 구분선 -------------------------- */  
+        // 상단으로 이동 up버튼
+        const go_to_top = document.querySelector('#go_to_top')
+        console.log(go_to_top)
+        go_to_top.addEventListener('click',()=>{
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth',
+            })
+        })
+        /* ---------------------- 구분선 -------------------------- */  
+    </script>
+</body>
+</html>

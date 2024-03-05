@@ -19,7 +19,57 @@ btn_etude_intro[1].addEventListener('click',()=>{
 btn_virens_intro.addEventListener('click',()=>{
     alert('준비중입니다. 조금만 기다려주세요 😊🙏')
 })
+/* ---------------------- 구분선 -------------------------- */  
+// 시간 날짜
+/* const dateTimeBox = document.getElementById("current_date_time");
+const dateTime = getCurrentDateTime();
+dateTimeBox.innerHTML = dateTime;
 
+setInterval(() => {
+    const dateTime = getCurrentDateTime();
+    dateTimeBox.innerHTML = dateTime;
+}, 1000); // 1초마다 현재 날짜 및 시간 업데이트 
+
+function getCurrentDateTime() {
+    const now = new Date();
+    // const year = now.getFullYear();
+    const month = now.getMonth() + 1; // 0부터 시작하기 때문에 1을 더해줌
+    const date = now.getDate();
+    const hours = now.getHours();
+    const minutes = now.getMinutes();
+    const seconds = now.getSeconds();
+
+    return `2024년 ${month}월 ${date}일 ${hours}:${minutes}:${seconds}`;
+} */
+/* ---------------------- 구분선 -------------------------- */  
+// 상단으로 이동 up버튼
+const go_to_top = document.querySelector('#go_to_top')
+console.log(go_to_top)
+go_to_top.addEventListener('click',()=>{
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth',
+    })
+})
+/* ---------------------- 구분선 -------------------------- */  
+// nav 탭
+const nav_a = document.querySelectorAll('nav a')
+const nav_tab = document.querySelectorAll('.nav_tab')
+const text_box = document.querySelectorAll('.text_box a')
+const menu_tab = document.querySelectorAll('.wrap > .menu_tab')
+// header nav
+console.log(nav_a,nav_tab,menu_tab)
+nav_a.forEach((t,i)=>{
+    t.addEventListener('click',()=>{
+        window.scrollTo(0, nav_tab[i].offsetTop)
+    })
+})
+// bugerbar menu tab
+text_box.forEach((t,i)=>{
+    t.addEventListener('click',()=>{
+        window.scrollTo(0, menu_tab[i].offsetTop)
+    })
+})
 /* ---------------------- 구분선 -------------------------- */  
 //스킬에 팝업
 const skill_pop = document.querySelector('.skill_pop')

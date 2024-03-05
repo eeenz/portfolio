@@ -14,3 +14,248 @@ h1 {
     0% {background-position-x: 100% ;}
     100% {background-position-x: 400% ;}
 }
+
+h1 {
+    font-size: 9vmin;
+    color: #8bf;
+    text-align: left;
+    font-family: Lato, sans-serif;
+    font-weight: 700;
+    margin: 1rem 0 1rem 2rem;
+}
+@keyframes typing {
+0.0000%, 27.3488% { content: ""; }
+1.1395%, 26.2093% { content: "d"; }
+2.2791%, 25.0698% { content: "de"; }
+3.4186%, 23.9302% { content: "dev"; }
+4.5581%, 22.7907% { content: "deve"; }
+5.6977%, 21.6512% { content: "devel"; }
+6.8372%, 20.5116% { content: "develo"; }
+7.9767%, 19.3721% { content: "develop"; }
+9.1163%, 18.2326% { content: "develope"; }
+10.2558%, 17.0930% { content: "developer"; }
+}
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+.typewriter {
+    --caret: currentcolor;
+}
+
+.typewriter::before {
+content: "";
+animation: typing 13.5s infinite;
+}
+
+.typewriter::after {
+content: "";
+border-right: 1px solid var(--caret);
+animation: blink 0.5s linear infinite;
+}
+
+/* test2 */
+
+.text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-right: 4px solid black;
+    font-size: 180%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.animation{
+    animation: typewriter 4s steps(15) 1s infinite both,
+                blinkCursor 500ms steps(15) infinite;
+}
+
+@keyframes typewriter {
+    from {
+        width: 0;
+    }
+    to {
+        width: 214px;
+    }
+}
+
+@keyframes blinkCursor{
+    from {
+        border-right-color: black;
+    }
+    to {
+        border-right-color: transparent;
+    }
+}
+
+/* 위아래 */
+.animate-text span.text-in{
+	display: block;
+	animation: textIn .5s ease;
+}
+.animate-text span.text-out{
+	animation: textOut 1s ease;
+}
+@keyframes textIn{
+	0%{
+		transform: translateY(100%);
+	}
+	100%{
+		transform: translateY(0%);
+	}
+}
+@keyframes textOut{
+	0%{
+		transform: translateY(0%);
+	}
+	100%{
+		transform: translateY(-100%);
+
+	}
+}
+
+/* transform: translateY(100%)
+  animation: reveal 1.7s cubic-bezier(1, 0, 0.3, 0.9) forwards */
+
+/* 마지막 땡큐 */
+@-webkit-keyframes opacity {
+    0%, 100% {opacity:0;}
+    50% {opacity:1;}
+}
+
+@-webkit-keyframes change {
+0%, 12.66%, 100% {transform:translate3d(0,0,0);}
+16.66%, 29.32% {transform:translate3d(0,-25%,0);}
+33.32%,45.98% {transform:translate3d(0,-50%,0);}
+49.98%,62.64% {transform:translate3d(0,-75%,0);}
+66.64%,79.3% {transform:translate3d(0,-50%,0);}
+83.3%,95.96% {transform:translate3d(0,-25%,0);}
+}
+
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 160px;
+    overflow:hidden;
+    
+    font-size: 30px;
+    line-height: 40px;
+    color: #ecf0f1;
+
+        &:before {
+            content: '{';
+            left: 0;
+        }
+
+        &:after {
+        content: '}';
+        position: absolute;
+        right: 0;
+        }
+
+        &:after, &:before {
+        position: absolute;
+        top: 0;
+
+        color: #16a085;
+        font-size: 42px;
+        line-height: 40px;
+
+        -webkit-animation-name: opacity;
+        -webkit-animation-duration: 2s;
+        -webkit-animation-iteration-count: infinite;
+        animation-name: opacity;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        }
+}
+
+/* 글씨블러 */
+/* animation-duration: 1s;
+    animation-fill-mode: both;
+ */
+.leBlurIn span { animation-name: leBlurIn }
+@keyframes leBlurIn {
+    from {
+        transform: scaleX(0.2);
+        filter: blur(20px);
+        opacity: 0;
+    }
+}
+
+/* 글씨블러 2 */
+@keyframes fade {
+    0% {
+        top:10px;
+        left:10px;
+        filter:blur(10px);
+        opacity:0;
+    }
+    50% {
+        filter:blur(5px);
+        opacity:0.9;
+    }
+    100% {
+        top:0px;
+        left:0px;
+        filter:blur(0px);
+        opacity:1;
+    }  
+}
+
+/* 마지막 땡큐 */
+p{
+	position: relative;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	background: linear-gradient(90deg,#000,#fff,#000);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-repeat: no-repeat;
+	background-size: 80%;
+	animation: animate 3s linear infinite;
+}
+	/* animation: animate 3s linear infinite; */
+@keyframes animate {
+	0%{background-position-x: -100%;}
+	100%{background-position-x: 100%;}
+}
+
+/* 땡큐 감사합니다랑 영어 */
+.wrap {
+    position: relative;
+    width: 100%;
+    height:65px;
+    overflow: hidden;
+}
+
+.play, .with, .code {
+    position: absolute;
+    width:100%;
+    text-align: center;
+    left:0;
+    animation: up 3s ease infinite;
+}
+.play {
+    top:-15px;
+}
+
+.with {
+top: 65px;
+}
+
+.code {
+top:145px;
+}
+@keyframes up {
+    0% {transform: translateY(0);}
+    25% {transform: translateY(-80px);}
+    50% {transform: translateY(-160px);}
+    75% {transform: translateY(-80px);}
+    100% {transform: translateY(0);}
+}
