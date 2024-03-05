@@ -432,7 +432,7 @@ body main .wrap .port_developer .developer_container .view .view_box {
 body main .wrap .port_developer .developer_container .view .view_box h1 {
   font-size: 3rem;
   width: 26%;
-  font-weight: 500;
+  font-weight: 600;
 }
 body main .wrap .port_developer .developer_container .view .view_box .project {
   width: 74%;
@@ -460,7 +460,7 @@ body main .wrap .port_developer .developer_container .view .view_box .project .p
 }
 body main .wrap .port_developer .developer_container .view .view_box .project .procject_box .project_left h2 {
   font-size: 2.5rem;
-  padding: 10px 0 14px;
+  padding: 10px 0 20px;
 }
 body main .wrap .port_developer .developer_container .view .view_box .project .procject_box .project_left .hashtag {
   width: 80%;
@@ -829,13 +829,22 @@ body main .wrap .skill_pop .skill_javascript span:nth-child(3), body main .wrap 
     transform: rotate(15deg) translate(0px, 5px);
   }
 }
-/* 글자 움직이려면 애니메이션 */
+/* 글자 움직이는 애니메이션 */
 @keyframes text_bg {
   0% {
     transform: translateX(0);
   }
   100% {
     transform: translateX(-100%);
+  }
+}
+/* 글자 블루 블랙 애니메이션 */
+@keyframes text_color {
+  0% {
+    color: #111;
+  }
+  100% {
+    color: #4d5ad6;
   }
 }
 .display_none {

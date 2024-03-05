@@ -431,7 +431,7 @@ body {
                             h1 {
                                 font-size: 3rem;
                                 width:26%;
-                                font-weight: 500;
+                                font-weight: 600;
                             }
     
                             .project {
@@ -460,7 +460,7 @@ body {
                                     .project_left {
                                         h2 {
                                             font-size: 2.5rem;
-                                            padding: 10px 0 14px;
+                                            padding: 10px 0 20px;
                                         }
                                         .hashtag {
                                             width: 80%;
@@ -828,10 +828,16 @@ body {
     100% {transform:  rotate(15deg) translate(0px, 5px);}
 }
 
-/* 글자 움직이려면 애니메이션 */
+/* 글자 움직이는 애니메이션 */
 @keyframes text_bg {
     0% {transform: translateX(0);}
     100% {transform: translateX(-100%) ;}
+}
+
+/* 글자 블루 블랙 애니메이션 */
+@keyframes text_color {
+    0% {color:#111;}
+    100% {color: $blue;}
 }
 
 .display_none {
