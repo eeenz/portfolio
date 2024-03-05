@@ -875,8 +875,16 @@ body main .wrap .skill_pop {
   right: 0;
   background-color: rgba(0, 0, 0, 0.87);
   z-index: 300;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
 }
-body main .wrap .skill_pop [class^=skill_] {
+body main .wrap .skill_pop > div[class^=skill_] {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   right: 200px;
   top: 270px;
@@ -884,30 +892,32 @@ body main .wrap .skill_pop [class^=skill_] {
   border-radius: 20px;
   width: 560px;
   height: 580px;
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
   overflow: hidden;
 }
-body main .wrap .skill_pop [class^=skill_] img {
+body main .wrap .skill_pop > div[class^=skill_] img {
   width: 200px;
   border-radius: 50%;
-  margin-bottom: 30px;
+  padding-bottom: 30px;
+  display: block;
+  margin: 0 auto;
 }
-body main .wrap .skill_pop [class^=skill_] .en_title {
+body main .wrap .skill_pop > div[class^=skill_] .en_title {
+  display: block;
   font-weight: 600;
   color: #4d5ad6;
   font-size: 1.25rem;
   margin-bottom: 8px;
+  text-align: center;
 }
-body main .wrap .skill_pop [class^=skill_] .ko_title {
+body main .wrap .skill_pop > div[class^=skill_] .ko_title {
   font-weight: 600;
   color: #4d5ad6;
   font-size: 1.75rem;
   margin-bottom: 16px;
+  text-align: center;
+  display: block;
 }
-body main .wrap .skill_pop [class^=skill_] .text_contents span {
+body main .wrap .skill_pop > div[class^=skill_] .text_contents span {
   display: block;
   text-align: left;
 }
