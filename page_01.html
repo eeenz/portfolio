@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>김은지 포트폴리오</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./images/icon/favicon.png" type="image/x-icon">
+    <link rel="icon" href="./images/icon/favicon.png" type="image/x-icon">
+    <!-- link -->
+    <link rel="stylesheet" href="./styles/reset.css">
+    <style>
+        main {width:100%; 
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+        }
+        main .btn_box {padding: 40px; display: flex; align-items: flex-start;}
+        main .btn_box a {display: block; text-align: left;}
+        main .btn_box a img {width: 30px;}
+        main .title_comment {
+            width: 1000px;
+            padding: 100px 0;
+            border-bottom: 1px solid #aaa;
+            text-align: center;
+        }
+        main .title_comment h2 {font-size: 1.25rem; font-weight: 500; margin-bottom: 20px;}
+        main .title_comment p:nth-child(2) {margin-bottom: 20px;}
+        main .title_comment p:nth-child(3) {margin-bottom: 10px;}
+        main .title_comment p:nth-child(4) {padding: 20px 0;}
+        main .lovememore_page {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="btn_box">
+            <a href="#"><img src="./images/icon/arrow_left.svg" alt=""></a>
+        </div>
+        <div class="title_comment">
+            <h2>러브미모어 2021 상세페이지입니다.</h2>
+            <p>설명설명설명설명설명설명설명설명설명설명설명설명설명설명</p>
+            <p>(@lovememore_official)</p>
+            <p>▼</p>
+        </div>
+        <div class="lovememore_page">
+            <img src="./images/portfolio/page/lovememore_01.jpg" alt="">
+        </div>
+    </main>
+    <script src="./script/main.js"></script>
+    <script>
+        const btn_back = document.querySelector('.btn_box > a')
+        btn_back.addEventListener('click',()=>{
+            location.href = './index.html'; // 이전 페이지로 이동
+        })
+    </script>
+</body>
+</html>
