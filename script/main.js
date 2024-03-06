@@ -13,9 +13,9 @@ burger_bar.addEventListener('click',()=>{
 const btn_etude_intro = document.querySelectorAll('.box3 > .project_left > .icon_go > a')
 const btn_virens_intro = document.querySelector('.box2 > .project_left > .icon_go > a')
 
-btn_etude_intro[1].addEventListener('click',()=>{
+/* btn_etude_intro[1].addEventListener('click',()=>{
     alert('준비중입니다. 조금만 기다려주세요 😊🙏')
-})
+}) */
 btn_virens_intro.addEventListener('click',()=>{
     alert('준비중입니다. 조금만 기다려주세요 😊🙏')
 })
@@ -23,11 +23,11 @@ btn_virens_intro.addEventListener('click',()=>{
 const mouse_circle = document.querySelector('main .mouse_circle')
 
 //동그란원 마우스 따라다니게 하기
-window.addEventListener('mousemove',(e)=>{
+/* window.addEventListener('mousemove',(e)=>{
     circle_active.style.left = `${e.clientX}px`
     circle_active.style.top = `${e.clientY}px`
     mouse_circle.classList.add('circle_active')
-})
+}) */
 /* ---------------------- 구분선 -------------------------- */  
 // 시간 날짜
 /* const dateTimeBox = document.getElementById("current_date_time");
@@ -60,6 +60,14 @@ go_to_top.addEventListener('click',()=>{
         behavior: 'smooth',
     })
 })
+/* ---------------------- 구분선 -------------------------- */  
+const project_thumb = document.querySelectorAll('.project_right > a')
+console.log(project_thumb)
+for(let a of project_thumb){
+    a.addEventListener('click',()=>{
+        alert('아래 설명에 "보러가기" 버튼을 클릭해 주세요.😊🙏')
+    })
+}
 /* ---------------------- 구분선 -------------------------- */  
 // nav 탭
 const nav_a = document.querySelectorAll('nav a')

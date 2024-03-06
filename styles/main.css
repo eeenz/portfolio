@@ -177,7 +177,7 @@ body main .wrap .area {
 body main .wrap .intro .intro_front {
   background-image: url(../images/intro/bg_wh_shadow.png);
   background-size: cover;
-  background-position-y: top;
+  background-position-y: center;
   background-color: #4d5ad6;
   height: 100vh;
   width: 100%;
@@ -283,7 +283,7 @@ body main .wrap .intro .intro_front .img_animation .circle::before {
   position: absolute;
   top: 140px;
   right: 150px;
-  background-color: rgba(0, 0, 0, 0.24);
+  background-color: #fff;
   width: 150px;
   height: 150px;
   border-radius: 50%;
@@ -502,7 +502,7 @@ body main .wrap .port_developer .developer_container .view .view_box .project .p
 }
 body main .wrap .port_developer .developer_container .view .view_box .project .procject_box .project_right a img:hover {
   filter: none;
-  transition: 0.5s linear;
+  transition: 0.8s linear;
 }
 body main .wrap .port_developer .developer_container .view .view_box .project .procject_box .project_right a img {
   box-shadow: 3px 4px 6px 4px rgba(0, 0, 0, 0.24);
@@ -512,11 +512,11 @@ body main .wrap .port_developer .developer_container .view .view_box .project .p
 body main .wrap .port_developer .developer_container .view .view_box .project .procject_box .project_left h2 {
   font-size: 1.85rem;
   padding: 16px 0 20px;
-  font-weight: 500;
+  font-weight: 600;
 }
 body main .wrap .port_developer .developer_container .view .view_box .project .procject_box .project_left .hashtag {
   width: 80%;
-  height: 76px;
+  height: 70px;
   display: inline-block;
 }
 body main .wrap .port_developer .developer_container .view .view_box .project .procject_box .project_left .hashtag span {
@@ -554,8 +554,8 @@ body main .wrap .port_developer .developer_container .view .view_box .project .p
   padding-top: 10px;
 }
 body main .wrap .port_developer .developer_container .view .view_box .project .procject_box .project_left .project_info p {
-  font-size: 0.875rem;
-  line-height: 1.4rem;
+  font-size: 0.925rem;
+  line-height: 1.5rem;
 }
 body main .wrap .port_designer {
   width: 100%;
@@ -725,10 +725,24 @@ body main .wrap .profile {
   flex-flow: row nowrap;
   justify-content: center;
   align-items: flex-start;
-  padding-top: 100px;
+  padding-top: 90px;
 }
 body main .wrap .profile .pro_left {
   width: 50%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  /* p:nth-child(7) {
+      font-size: 1rem;
+      color:#fff;
+      text-align: center;
+      font-weight: 400;
+      letter-spacing: 0.04rem;
+      padding-bottom: 4px;
+      display: inline-block;
+      animation: line_blue 5s ease infinite;
+  } */
 }
 body main .wrap .profile .pro_left h2 {
   color: #fff;
@@ -749,18 +763,39 @@ body main .wrap .profile .pro_left h3 {
   text-align: center;
 }
 body main .wrap .profile .pro_left p:nth-child(4) {
-  margin-top: 30px;
+  margin-top: 20px;
   color: #fff;
   font-size: 1.125rem;
   text-align: center;
   font-weight: 200;
   line-height: 2.1rem;
 }
-body main .wrap .profile .pro_left p:nth-child(5) {
+body main .wrap .profile .pro_left a:nth-child(5) {
+  font-size: 1rem;
+  color: #fff;
+  text-align: center;
+  font-weight: 400;
+  margin-top: 20px;
+  letter-spacing: 0.04rem;
+  padding-bottom: 4px;
+  display: inline-block;
+  animation: line_blue 4s ease infinite;
+}
+body main .wrap .profile .pro_left a:nth-child(6) {
+  font-size: 1rem;
+  color: #fff;
+  text-align: center;
+  font-weight: 400;
+  letter-spacing: 0.04rem;
+  padding-bottom: 4px;
+  display: inline-block;
+  animation: line_blue 4s ease infinite;
+}
+body main .wrap .profile .pro_left p:nth-child(7) {
   text-align: center;
 }
-body main .wrap .profile .pro_left p:nth-child(5) img {
-  padding: 50px 0 20px;
+body main .wrap .profile .pro_left p:nth-child(7) img {
+  padding: 30px 0 20px;
 }
 body main .wrap .profile .pro_right {
   width: 50%;
@@ -771,8 +806,14 @@ body main .wrap .profile .pro_right h2 {
   letter-spacing: 0.04rem;
   text-align: center;
 }
+body main .wrap .profile .pro_right p {
+  text-align: center;
+  color: #f0f0f0;
+  font-size: 0.875rem;
+  padding-top: 20px;
+}
 body main .wrap .profile .pro_right .skill_box {
-  padding-top: 50px;
+  padding-top: 20px;
   margin: 0 auto;
   width: 50%;
   display: grid;
@@ -1022,6 +1063,15 @@ body main .wrap .skill_pop .skill_box_bg > div[class^=skill_] .text_contents spa
     transform: translateX(-100%);
   }
 }
+/* 글자 스와이프처럼 움직이는 애니메이션 */
+@keyframes text_bg {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(200%);
+  }
+}
 /* 글자 블루 블랙 애니메이션 */
 @keyframes text_color {
   0% {
@@ -1049,6 +1099,26 @@ body main .wrap .skill_pop .skill_box_bg > div[class^=skill_] .text_contents spa
     opacity: 0;
   }
 }
+@keyframes line_blue {
+  0% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .display_none {
   display: none !important;
+}
+
+.circle_active {
+  background-color: #fff;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  position: fixed;
+  z-index: 999;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: all 0.4s linear;
 }/*# sourceMappingURL=main.css.map */

@@ -178,7 +178,7 @@ body {
                     // display: none;
                     background-image: url(../images/intro/bg_wh_shadow.png) ;
                     background-size: cover;
-                    background-position-y: top;
+                    background-position-y: center;
                     background-color: $blue;
                     height: 100vh;
                     width:100%;
@@ -337,8 +337,8 @@ body {
                             position: absolute; 
                             top:140px;
                             right: 150px;
-                            background-color: rgba(0, 0, 0, 0.24);
-                            // background-color: #fff;
+                            // background-color: rgba(0, 0, 0, 0.24);
+                            background-color: #fff;
                             width: 150px;
                             height: 150px;
                             border-radius: 50%;
@@ -554,7 +554,7 @@ body {
                                         a {
                                             img:hover {
                                                 filter: none;
-                                                transition: 0.5s linear;
+                                                transition: 0.8s linear;
                                             }
                                             img {
                                                 box-shadow: 3px 4px 6px 4px rgba(0, 0, 0, 0.24);
@@ -567,11 +567,11 @@ body {
                                         h2 {
                                             font-size: 1.85rem;
                                             padding: 16px 0 20px;
-                                            font-weight: 500;
+                                            font-weight: 600;
                                         }
                                         .hashtag {
                                             width: 80%;
-                                            height: 76px;
+                                            height: 70px;
                                             display: inline-block;
                                             span {
                                                 font-size: 0.75rem;
@@ -608,8 +608,8 @@ body {
                                         .project_info {
                                             padding-top: 10px;
                                             p {
-                                                font-size: 0.875rem;
-                                                line-height: 1.4rem;
+                                                font-size: 0.925rem;
+                                                line-height: 1.5rem;
                                             }
                                         }
                                     }
@@ -816,9 +816,10 @@ body {
                 // background-color: $dkgray;
                 background-color: #000;
                 @include flex-row-ct-st;
-                padding-top: 100px;
+                padding-top: 90px;
                 .pro_left{
                     width:50%;
+                    @include flex-col-ct-ct;
                     h2 {
                         color:#fff;
                         font-size: 4.8rem;
@@ -838,17 +839,48 @@ body {
                         text-align: center;
                     }
                     p:nth-child(4) {
-                        margin-top: 30px;
+                        margin-top: 20px;
                         color:#fff;
                         font-size: 1.125rem;
                         text-align: center;
                         font-weight: 200;
                         line-height: 2.1rem;
                     }
-                    p:nth-child(5) {
+                    a:nth-child(5) {
+                        font-size: 1rem;
+                        color:#fff;
+                        text-align: center;
+                        font-weight: 400;
+                        margin-top: 20px;
+                        letter-spacing: 0.04rem;
+                        padding-bottom: 4px;
+                        display: inline-block;
+                        animation: line_blue 4s ease infinite;
+                    }
+                    a:nth-child(6) {
+                        font-size: 1rem;
+                        color:#fff;
+                        text-align: center;
+                        font-weight: 400;
+                        letter-spacing: 0.04rem;
+                        padding-bottom: 4px;
+                        display: inline-block;
+                        animation: line_blue 4s ease infinite;
+                    }
+                    /* p:nth-child(7) {
+                        font-size: 1rem;
+                        color:#fff;
+                        text-align: center;
+                        font-weight: 400;
+                        letter-spacing: 0.04rem;
+                        padding-bottom: 4px;
+                        display: inline-block;
+                        animation: line_blue 5s ease infinite;
+                    } */
+                    p:nth-child(7) {
                         text-align: center;
                         img {
-                            padding: 50px 0 20px;
+                            padding: 30px 0 20px;
                         }
                     }
                 }
@@ -860,8 +892,14 @@ body {
                         letter-spacing: 0.04rem;
                         text-align: center;
                     }
+                    p {
+                        text-align: center;
+                        color:$gray;
+                        font-size: 0.875rem;
+                        padding-top: 20px;
+                    }
                     .skill_box {
-                        padding-top: 50px;
+                        padding-top: 20px;
                         margin: 0 auto;
                         width: 50%;
                         display: grid;
@@ -1067,6 +1105,11 @@ body {
     0% {transform: translateX(0);}
     100% {transform: translateX(-100%) ;}
 }
+/* 글자 스와이프처럼 움직이는 애니메이션 */
+@keyframes text_bg {
+    0% {transform: translateX(100%);}
+    100% {transform: translateX(200%) ;}
+}
 
 /* 글자 블루 블랙 애니메이션 */
 @keyframes text_color {
@@ -1088,6 +1131,10 @@ body {
         opacity: 0;
     }
 }
+@keyframes line_blue {
+    0% {opacity: 0.2};
+    100% { opacity: 1;};
+}
 
 .display_none {
     display: none !important;
@@ -1100,5 +1147,5 @@ body {
     position: fixed; z-index: 999;
     transform: translate(-50%, -50%);
     pointer-events:none; 
-    transition: all 0.2s linear;
+    transition: all 0.4s linear;
 }
