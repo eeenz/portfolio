@@ -75,15 +75,21 @@ text_box.forEach((t,i)=>{
 const skill_pop = document.querySelector('.skill_pop')
 const skill_pop_bg = document.querySelector('.skill_box_bg')
 const skill = document.querySelectorAll('.skill_box > a')
-
-for (let a of skill){
-    a.addEventListener('click',()=>{
+const skill_contents = document.querySelectorAll('[class^=skill_con_]')
+console.log(skill,skill_pop,skill_contents,'-----')
+let contents_hide = ()=>{
+    for(let a of skill_contents){a.classList.add('display_none')}
+}
+skill.forEach((t,i)=>{
+    t.addEventListener('click',()=>{
         skill_pop.classList.remove('display_none')
+        contents_hide()
+        skill_contents[i].classList.remove('display_none')
         skill_pop_bg.addEventListener('click',()=>{
             skill_pop.classList.add('display_none')
         })
     })
-}
+})
 
 /* ---------------------- 구분선 -------------------------- */      
 // 토글

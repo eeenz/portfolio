@@ -718,7 +718,7 @@ body main .wrap .profile {
   flex-flow: row nowrap;
   justify-content: center;
   align-items: flex-start;
-  padding-top: 150px;
+  padding-top: 100px;
 }
 body main .wrap .profile .pro_left {
   width: 50%;
@@ -876,33 +876,35 @@ body main .wrap .skill_pop {
   right: 0;
   background-color: rgba(0, 0, 0, 0.87);
   z-index: 300;
+}
+body main .wrap .skill_pop .skill_box_bg {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
 }
-body main .wrap .skill_pop > div[class^=skill_] {
+body main .wrap .skill_pop .skill_box_bg > div[class^=skill_] {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
   position: absolute;
   right: 200px;
-  top: 270px;
+  top: 250px;
   background-color: #fff;
   border-radius: 20px;
   width: 560px;
   height: 580px;
   overflow: hidden;
 }
-body main .wrap .skill_pop > div[class^=skill_] img {
+body main .wrap .skill_pop .skill_box_bg > div[class^=skill_] img {
   width: 200px;
   border-radius: 50%;
   padding-bottom: 30px;
   display: block;
   margin: 0 auto;
 }
-body main .wrap .skill_pop > div[class^=skill_] .en_title {
+body main .wrap .skill_pop .skill_box_bg > div[class^=skill_] .en_title {
   display: block;
   font-weight: 600;
   color: #4d5ad6;
@@ -910,7 +912,7 @@ body main .wrap .skill_pop > div[class^=skill_] .en_title {
   margin-bottom: 8px;
   text-align: center;
 }
-body main .wrap .skill_pop > div[class^=skill_] .ko_title {
+body main .wrap .skill_pop .skill_box_bg > div[class^=skill_] .ko_title {
   font-weight: 600;
   color: #4d5ad6;
   font-size: 1.75rem;
@@ -918,7 +920,10 @@ body main .wrap .skill_pop > div[class^=skill_] .ko_title {
   text-align: center;
   display: block;
 }
-body main .wrap .skill_pop > div[class^=skill_] .text_contents span {
+body main .wrap .skill_pop .skill_box_bg > div[class^=skill_] .text_contents {
+  padding: 16px 40px;
+}
+body main .wrap .skill_pop .skill_box_bg > div[class^=skill_] .text_contents span {
   display: block;
   text-align: left;
 }
