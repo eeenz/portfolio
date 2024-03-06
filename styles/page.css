@@ -59,4 +59,15 @@ main .lovememore_page {
 main .lovememore_page img {
   margin-bottom: 100px;
   max-width: 1920px;
+}
+main .lovememore_page .page_sns_box {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1080px;
+}
+main .lovememore_page .page_sns_box img {
+  width: calc(50% - 20px);
+  border: 1px solid #aaa;
 }/*# sourceMappingURL=page.css.map */

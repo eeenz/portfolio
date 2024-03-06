@@ -488,11 +488,11 @@ body {
                         display: flex;
                         flex-flow: column nowrap;
                         align-items: flex-start;
-                        padding: 50px 140px 20px;
+                        padding: 40px 140px 20px;
                         
                         .developer_top {
                             width: 100%;
-                            padding: 0px 0px 50px;
+                            padding: 0px 0px 60px;
                             @include flex-row-btw-ct;
                             border-bottom: 1px solid #333;
                             .left {
@@ -504,8 +504,8 @@ body {
                                     content: '';
                                     display: inline-block;
                                     border: 2px solid #222;
-                                    width: 46px;
-                                    height: 82px;
+                                    width: 40px;
+                                    height: 73px;
                                     border-radius: 30px;
                                     animation: up_down 2s ease infinite;
                                 }
@@ -514,7 +514,7 @@ body {
                                     content: '';
                                     display: inline-block;
                                     width: 6px;
-                                    height: 20px;
+                                    height: 18px;
                                     border-radius: 30px;
                                     transform: translate(-24px, -46px);
                                     animation: scroll_move 1.8s ease infinite;
@@ -530,7 +530,7 @@ body {
                             justify-content: space-between;
                             align-items: flex-start;
                             width: 100%;
-                            padding: 60px 0;
+                            padding: 30px 0;
                         
                             h1 {
                                 font-size: 3.8rem;
@@ -571,7 +571,7 @@ body {
                                         }
                                         .hashtag {
                                             width: 80%;
-                                            height: 90px;
+                                            height: 76px;
                                             display: inline-block;
                                             span {
                                                 font-size: 0.75rem;
@@ -586,7 +586,7 @@ body {
                                             }
                                         }
                                         .icon_go {
-                                            padding: 14px 0;
+                                            padding: 8px 0;
                                             width: 100%;
                                             a {
                                                 padding: 2px 14px 10px;
@@ -603,6 +603,13 @@ body {
                                                     background-color: $blue;
                                                     border-radius: 50%;
                                                 }
+                                            }
+                                        }
+                                        .project_info {
+                                            padding-top: 10px;
+                                            p {
+                                                font-size: 0.875rem;
+                                                line-height: 1.4rem;
                                             }
                                         }
                                     }
@@ -1027,9 +1034,9 @@ body {
     100% {opacity: 1;}
 }
 @keyframes scroll_move {
-    0% {transform: translate(-28px, -40px);}
-    50% {transform: translate(-28px, -34px);}
-    100% {transform: translate(-28px, -40px);}
+    0% {transform: translate(-27px, -34px);}
+    50% {transform: translate(-27px, -30px);}
+    100% {transform: translate(-27px, -34px);}
 }
 @keyframes up_title {
     0% {transform: translate(0px, 100px); opacity:0;}

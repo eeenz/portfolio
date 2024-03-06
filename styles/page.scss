@@ -55,5 +55,16 @@ main {
             margin-bottom: 100px;
             max-width: 1920px;
         }
+        .page_sns_box {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1080px;
+            img {
+                width: calc((100% / 2) - 20px);
+                border:1px solid #aaa;
+            }
+        }
     }
 }
