@@ -575,6 +575,7 @@
             effect: "coverflow",
             loop: true,
             grabCursor: true,
+            autoplay:{delay:1100,},
             slidesPerView:4, //슬라이드 한번에 4개씩 보이기
             spaceBetween:50, //슬라이드 여백
             centeredSlides:true, //슬라이드의 기준을 가운데부터 시작하도록 설정하기
@@ -594,6 +595,7 @@
             effect: "cube",
             grabCursor: true,
             loop: true,
+            autoplay:{delay:2000,},
             cubeEffect: {
                 shadow: true,
                 slideShadows: true,
@@ -607,6 +609,7 @@
         /*   Initialize Swiper -- portfolio_viral   */
         let swiper3 = new Swiper(".swiper3", {
             slidesPerView: 3,
+            autoplay:{delay:2000,},
             grid: {
                 rows: 3,
             },
@@ -619,6 +622,7 @@
         // 인피니티 루프 -- banner
         var swiper4 = new Swiper(".swiper4", {
             slidesPerView: 1,
+            autoplay:{delay:1100,},
             spaceBetween: 30,
             loop: true,
             pagination: {
@@ -646,16 +650,10 @@
             wrap.style.top = `${page*-100}vh` 
             console.log(`${page*-100}vh`) 
         },{passive:false}) 
-        
-        /* $('.wrap').fullpage({
-            // 속성:값, 속성:값,
-            scrollBar:true,
-            scrollingSpeed:1200,
-            navigation:true, 
-            navigationPosition: 'left',
-            // navigationTooltips:['MAIN','Team Project','Self Project','Web Page','LookBook','Skill','About'],
-            // showActiveTooltip:true,
-        }) */
+
+        setTimeout(function(){ //새로고침시 상단으로 이동
+            window.scrollTo(0, 0)
+        }, 100)
     </script>
 </body>
 </html>  
