@@ -20,6 +20,15 @@ btn_virens_intro.addEventListener('click',()=>{
     alert('준비중입니다. 조금만 기다려주세요 😊🙏')
 })
 /* ---------------------- 구분선 -------------------------- */  
+const mouse_circle = document.querySelector('main .mouse_circle')
+
+//동그란원 마우스 따라다니게 하기
+window.addEventListener('mousemove',(e)=>{
+    circle_active.style.left = `${e.clientX}px`
+    circle_active.style.top = `${e.clientY}px`
+    mouse_circle.classList.add('circle_active')
+})
+/* ---------------------- 구분선 -------------------------- */  
 // 시간 날짜
 /* const dateTimeBox = document.getElementById("current_date_time");
 const dateTime = getCurrentDateTime();

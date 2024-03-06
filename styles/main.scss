@@ -1092,3 +1092,13 @@ body {
 .display_none {
     display: none !important;
 }
+
+.circle_active {
+    background-color:  #fff;
+    width: 34px; height: 34px;
+    border-radius: 50%;
+    position: fixed; z-index: 999;
+    transform: translate(-50%, -50%);
+    pointer-events:none; 
+    transition: all 0.2s linear;
+}
