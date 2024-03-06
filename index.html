@@ -713,6 +713,7 @@
         window.addEventListener('wheel',(e)=>{ 
             console.log(e.deltaY) 
             e.preventDefault() 
+            autoplay:{delay:2000}
             if(e.deltaY > 0){page++} 
             if(e.deltaY < 0){page--} 
             if(page > 7){ page = 7} 
