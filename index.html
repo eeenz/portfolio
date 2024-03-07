@@ -705,7 +705,6 @@
         </div>
         <div class="mouse_circle"></div>
     </main>
-    <script src="./script/main.js"></script>
     <!--플러그인 필수 JS cdn 연결-->
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
@@ -713,7 +712,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./fullpage/jquery.fullPage.js"></script>
     <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./script/main.js"></script>
     <script>
         /*   Initialize Swiper -- coverflow -- portfolio_designer   */
         let swiper1 = new Swiper(".swiper1", {
@@ -732,11 +731,11 @@
                 // slideShadows: true,
             },
             pagination: {
-                el: ".swiper-pagination",
+                el: ".swiper1 .swiper-pagination",
             },
         });
         /*   Initialize Swiper -- portfolio_lookbook   */
-        let swiper2 = new Swiper(".swiper2", {
+        let swiper2 = new Swiper(".lookbook .swiper2", {
             effect: "cube",
             grabCursor: true,
             loop: true,
@@ -752,7 +751,7 @@
             },
         });
         /*   Initialize Swiper -- portfolio_viral   */
-        let swiper3 = new Swiper(".swiper3", {
+        let swiper3 = new Swiper(".viral .swiper3", {
             slidesPerView: 3,
             autoplay:{delay:2000,},
             grid: {
@@ -765,13 +764,13 @@
             },
         });
         // 인피니티 루프 -- banner
-        var swiper4 = new Swiper(".swiper4", {
+        let swiper4 = new Swiper(".swiper4", {
             slidesPerView: 1,
             autoplay:{delay:2000,},
             spaceBetween: 30,
             loop: true,
             pagination: {
-                el: ".swiper-pagination",
+                el: ".banner_box .swiper-pagination",
                 clickable: true,
             },
             navigation: {
