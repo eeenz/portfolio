@@ -101,7 +101,7 @@ body main .arrow_top {
   right: 96px;
   z-index: 999;
 }
-body main .arrow_top a img {
+body main .arrow_top #go_to_top img {
   width: 50px;
   filter: invert(20%);
 }
@@ -938,7 +938,7 @@ body main .wrap .skill_pop .skill_box_bg > div[class^=skill_] {
   align-items: center;
   position: absolute;
   right: 200px;
-  top: 250px;
+  top: 220px;
   background-color: #fff;
   border-radius: 20px;
   width: 560px;

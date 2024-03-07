@@ -98,7 +98,7 @@ body {
             bottom: 70px;
             right: 96px;
             z-index: 999;
-            a {
+            #go_to_top {
                 img {
                     width:50px;
                     filter: invert(20%);
@@ -1019,7 +1019,7 @@ body {
                         @include flex-col-ct-ct;
                         position: absolute;
                         right: 200px;
-                        top:250px;
+                        top:220px;
                         background-color: #fff;
                         border-radius: 20px;
                         width: 560px;

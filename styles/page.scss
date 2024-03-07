@@ -1,5 +1,7 @@
 @import 'common';
-
+body, html{
+    scroll-behavior: smooth;
+}
 main {
     width:100%; 
     display: flex;

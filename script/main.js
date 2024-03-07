@@ -54,7 +54,9 @@ function getCurrentDateTime() {
 // 상단으로 이동 up버튼
 const go_to_top = document.querySelector('#go_to_top')
 console.log(go_to_top)
-go_to_top.addEventListener('click',()=>{
+
+go_to_top.addEventListener('click',(e)=>{
+    e.stopPropagation();
     window.scrollTo({
         top: 0,
         behavior: 'smooth',
