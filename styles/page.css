@@ -40,6 +40,11 @@ main .title_comment {
   text-align: center;
   background-color: #f7f7f7;
 }
+main .title_comment h3 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
 main .title_comment h2 {
   font-size: 1.25rem;
   font-weight: 500;

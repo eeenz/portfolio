@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>김은지 | 상세페이지</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./images/icon/favicon.png" type="image/x-icon">
+    <link rel="icon" href="./images/icon/favicon_2.png" type="image/x-icon">
+    <!-- link -->
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/page.css">
+</head>
+<body>
+    <main>
+        <div class="arrow_top">
+            <a href="#" id="go_to_top"><img src="./images/icon/arrow_top_bk.svg" alt="" ></a>
+        </div>
+        <div class="btn_box">
+            <a href="#"><img src="./images/icon/arrow_left_bk.svg" alt=""></a>
+        </div>
+        <div class="title_comment">
+            <h3>LOVEMEMORE</h3>
+            <h2>logo, label, polybag, tag, sticker design</h2>
+            <p> 러브미모어 로고, 라벨, 폴리백, 택, 스티커 제작</p>
+            <!-- <p></p> -->
+            <p>▼</p>
+        </div>
+        <div class="lovememore_page">
+            <img src="./images/portfolio/package/004.jpg" alt="">
+            <img src="./images/portfolio/package/005.jpg" alt="">
+            <img src="./images/portfolio/package/006.jpg" alt="">
+            <img src="./images/portfolio/package/007.jpg" alt="">
+            <img src="./images/portfolio/package/008.jpg" alt="">
+            <img src="./images/portfolio/package/009.jpg" alt="">
+        </div>
+    </main>
+    <script>
+        /* ---------------------- 구분선 -------------------------- */  
+        // 뒤로가기 버튼
+        const btn_back = document.querySelector('.btn_box > a')
+        btn_back.addEventListener('click',()=>{
+            location.href = './index.html'; // 이전 페이지로 이동
+        })
+        /* ---------------------- 구분선 -------------------------- */  
+        // 상단으로 이동 up버튼
+        const go_to_top = document.querySelector('#go_to_top')
+        console.log(go_to_top)
+        go_to_top.addEventListener('click',()=>{
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth',
+            })
+        })
+        /* ---------------------- 구분선 -------------------------- */  
+    </script>
+</body>
+</html>

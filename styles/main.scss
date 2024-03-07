@@ -550,14 +550,20 @@ body {
                                     width: calc((100% / 2) - 20px);
                                     .project_right {
                                         // background-color: #333;
+                                        overflow: hidden;
                                         width: 100%;
-                                        a {
-                                            img:hover {
+                                        a:hover {
+                                            img {
                                                 filter: none;
+                                                transform: scale(1.04);
                                                 transition: 0.8s linear;
                                             }
+                                        }
+                                        a {
+                                            display: block;
+                                            width: 100%;
                                             img {
-                                                box-shadow: 3px 4px 6px 4px rgba(0, 0, 0, 0.24);
+                                                // box-shadow: 3px 4px 6px 4px rgba(0, 0, 0, 0.24);
                                                 width: 100%;
                                                 filter: grayscale(100%);
                                             }
@@ -708,8 +714,15 @@ body {
                                 .swiper-slide {
                                     width: 100%;
                                     overflow: hidden;
+                                    .swiper-slide a:hover img {
+                                        transform: scale(1.04);
+                                        transition: 0.6s ease-in-out;
+                                    }
+                                    .swiper-slide a {
+                                        cursor: pointer;
+                                    }
                                     .swiper-slide img {
-                                    width: 100%;
+                                        width: 100%;
                                     }
                                 }
                             }
@@ -731,7 +744,8 @@ body {
                                 .swiper-slide {
                                     border: 1px solid $dkgray;
                                     background: #fff;
-                                    height: calc((100% - 40px) / 3) !important;
+                                    width: calc((100% - 40px) / 3);
+                                    aspect-ratio: 1/1;
                                     text-align: center;
                                     font-size: 18px;
                                     display: flex;
@@ -740,8 +754,13 @@ body {
                                     align-items: center;
                                     overflow: hidden;
                                     img {
-                                        // height: 100%;
                                         width: 100%;
+                                    }
+                                    .swiper-slide:hover {
+                                        img {
+                                        transform: scale(1.04);
+                                        transition: 0.6s ease-in-out;
+                                        }
                                     }
                                 }
                             }
@@ -806,6 +825,44 @@ body {
                                     object-fit: cover;
                                 }
                             }
+                        }
+                    }
+                }
+                .package_box {
+                    padding : 50px 100px;
+                    background-color: $blue;
+                    .package_contents {
+                        display: flex;
+                        flex-flow: row wrap;
+                        justify-content: flex-start;
+                        align-items: center;
+                        column-gap: 20px; 
+                        row-gap: 20px; 
+                        a:hover {
+                            img {
+                                transform: scale(1.04);
+                                transition: 0.6s ease-in-out;
+                            }
+                        }
+                        a {
+                            width: calc((100% / 4) - 40px);
+                            border:1px solid #111;
+                            overflow: hidden;
+                            aspect-ratio: 1/1;
+                            align-items: center;
+                            img {
+                                width:100%;
+                                margin: 0 auto;
+                            }
+                        }
+                    }
+                    .package_comment {
+                        position: relative;
+                        h2 {
+                            font-size: 4rem;
+                            position: absolute;
+                            right: 120px;
+                            bottom: 10px;
                         }
                     }
                 }
