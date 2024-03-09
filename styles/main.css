@@ -112,7 +112,7 @@ body main .wrap {
   transition: all 0.3s;
 }
 body main .wrap .menu_info {
-  background-color: #4d5ad6;
+  background-color: #f0f0f0;
   position: fixed;
   z-index: 999;
   height: 100vh;

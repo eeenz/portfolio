@@ -16,9 +16,9 @@ const btn_virens_intro = document.querySelector('.box2 > .project_left > .icon_g
 /* btn_etude_intro[1].addEventListener('click',()=>{
     alert('준비중입니다. 조금만 기다려주세요 😊🙏')
 }) */
-btn_virens_intro.addEventListener('click',()=>{
-    alert('준비중입니다. 조금만 기다려주세요 😊🙏')
-})
+// btn_virens_intro.addEventListener('click',()=>{
+//     alert('준비중입니다. 조금만 기다려주세요 😊🙏')
+// })
 /* ---------------------- 구분선 -------------------------- */  
 const mouse_circle = document.querySelector('main .mouse_circle')
 
