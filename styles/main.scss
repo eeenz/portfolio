@@ -723,6 +723,7 @@ body {
                         padding-top: 70px;
                         padding-bottom: 50px;
                         margin-right: 0 auto;
+                        // animation: up_title 2s;
                 
                         .swiper-wrapper {
                             .swiper-slide {
@@ -1202,7 +1203,7 @@ body {
     100% {transform: translateX(-100%) ;}
 }
 /* 글자 스와이프처럼 움직이는 애니메이션 */
-@keyframes text_bg {
+@keyframes text_sw {
     0% {transform: translateX(100%);}
     100% {transform: translateX(200%) ;}
 }

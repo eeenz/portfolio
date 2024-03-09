@@ -51,9 +51,20 @@ function getCurrentDateTime() {
     return `2024년 ${month}월 ${date}일 ${hours}:${minutes}:${seconds}`;
 } */
 /* ---------------------- 구분선 -------------------------- */  
+// 풀페이지 상단에 도달했을 때 애니메이션 효과 적용
+// const section_page = document.querySelector('.swiper1')
+// console.log(section_page)
+// window.addEventListener('scroll',()=>{
+//     const sectionTop = section_page.offsetTop;
+//     if(window.pageYOffset == sectionTop){
+//         section_page.style.animation = 'up_title 2s ease-in-out';
+//     }
+// })
+// 
+
+/* ---------------------- 구분선 -------------------------- */  
 // 상단으로 이동 up버튼
 const go_to_top = document.querySelector('#go_to_top')
-console.log(go_to_top)
 
 go_to_top.addEventListener('click',(e)=>{
     e.stopPropagation();
@@ -64,7 +75,6 @@ go_to_top.addEventListener('click',(e)=>{
 })
 /* ---------------------- 구분선 -------------------------- */  
 const project_thumb = document.querySelectorAll('.project_right > a')
-console.log(project_thumb)
 for(let a of project_thumb){
     a.addEventListener('click',()=>{
         alert('아래 설명에 "보러가기" 버튼을 클릭해 주세요.😊🙏')
@@ -77,7 +87,6 @@ const nav_tab = document.querySelectorAll('.nav_tab')
 const text_box = document.querySelectorAll('.text_box a')
 const menu_tab = document.querySelectorAll('.wrap > .menu_tab')
 // header nav
-console.log(nav_a,nav_tab,menu_tab)
 nav_a.forEach((t,i)=>{
     t.addEventListener('click',()=>{
         window.scrollTo(0, nav_tab[i].offsetTop)
@@ -95,7 +104,6 @@ const skill_pop = document.querySelector('.skill_pop')
 const skill_pop_bg = document.querySelector('.skill_box_bg')
 const skill = document.querySelectorAll('.skill_box > a')
 const skill_contents = document.querySelectorAll('[class^=skill_con_]')
-console.log(skill,skill_pop,skill_contents,'-----')
 let contents_hide = ()=>{
     for(let a of skill_contents){a.classList.add('display_none')}
 }

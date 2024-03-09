@@ -76,7 +76,7 @@ $dkgray: #202020;
 @mixin flex-col-st {
     display: flex;
     flex-flow: column nowrap;
-    align-items: start;
+    align-items: flex-start;
 }
 @mixin flex-col-lf {
     display: flex;

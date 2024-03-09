@@ -481,7 +481,7 @@ body main .wrap .port_developer .developer_container .view .view_box .project .p
   padding: 0 20px;
   display: flex;
   flex-flow: column nowrap;
-  align-items: start;
+  align-items: flex-start;
   width: calc(50% - 20px);
 }
 body main .wrap .port_developer .developer_container .view .view_box .project .procject_box .project_right {
@@ -1105,7 +1105,7 @@ body main .wrap .skill_pop .skill_box_bg > div[class^=skill_] .text_contents spa
   }
 }
 /* 글자 스와이프처럼 움직이는 애니메이션 */
-@keyframes text_bg {
+@keyframes text_sw {
   0% {
     transform: translateX(100%);
   }
