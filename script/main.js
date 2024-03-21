@@ -75,11 +75,14 @@ go_to_top.addEventListener('click',(e)=>{
 })
 /* ---------------------- 구분선 -------------------------- */  
 const project_thumb = document.querySelectorAll('.project_right > a')
-for(let a of project_thumb){
-    a.addEventListener('click',()=>{
-        alert('아래 설명에 "보러가기" 버튼을 클릭해 주세요.😊🙏')
-    })
-}
+project_thumb[1].addEventListener('click',()=>{
+    alert('아래 설명에 "보러가기" 버튼을 클릭해 주세요.😊🙏')
+})
+// for(let a of project_thumb){
+//     a.addEventListener('click',()=>{
+//         alert('아래 설명에 "보러가기" 버튼을 클릭해 주세요.😊🙏')
+//     })
+// }
 /* ---------------------- 구분선 -------------------------- */  
 // nav 탭
 const nav_a = document.querySelectorAll('nav a')

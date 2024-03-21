@@ -1039,6 +1039,7 @@ body {
                     color:#fff;
                     padding-bottom: 186px;
                     font-size: 1.25rem;
+                    // animation: opacity 3s ease-in-out infinite both;
                     img{
                         width:100%;
                         opacity: 0.3;
@@ -1204,8 +1205,9 @@ body {
 }
 /* 글자 스와이프처럼 움직이는 애니메이션 */
 @keyframes text_sw {
-    0% {transform: translateX(100%);}
-    100% {transform: translateX(200%) ;}
+    0% {transform: translateY(-20%); opacity: 0;}
+    50% {transform: translateY(0%); opacity: 1;}
+    100% {transform: translateY(-20%); opacity: 0;}
 }
 
 /* 글자 블루 블랙 애니메이션 */

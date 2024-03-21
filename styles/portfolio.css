@@ -1,10 +1,32 @@
-body, html {scroll-behavior: smooth;}
+body, html {scroll-behavior: smooth; min-width: 1920px;}
 /* intro page */
 /* intro page - header */
 header {
     width: 80px; height: 100vh;
     position: fixed; top:0; right: 0; z-index: 900;
     background:#333;
+}
+header nav {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%; 
+    height: 100vh;
+    padding-bottom: 30px;
+}
+header nav a {
+    font-weight: 800;
+    transform: rotate(90deg);
+    white-space: nowrap;
+    padding: 0 20px;
+    text-align: left;
+    color:#fff;
+}
+header nav a span {
+    font-weight: 800;
+    padding-left: 5px;
+    color:#fff;
 }
 header nav .gnb {
     display: flex; 
@@ -221,23 +243,24 @@ main .portfolio .container .contents .list .link_area {
     display: flex; justify-content: space-between; align-items: center;
     margin-top: 50px;
 }
-/* main .portfolio .container .contents1 .list .link_area .box:hover {
+main .portfolio .container .contents1 .list .link_area .box:hover {
     box-shadow: 10px 10px 0 #d50057;
     transition: 0.3s linear;
 }
 main .portfolio .container .contents2 .list .link_area .box:hover {
     box-shadow: 10px 10px 0 #003314;
     transition: 0.3s linear;
-} */
-main .portfolio .container .contents .list .link_area .box:hover {
-    box-shadow: 10px 10px 0 #066bf9;
+} 
+main .portfolio .container .contents3 .list .link_area .box:hover {
+    box-shadow: 10px 10px 0 rgb(95, 0, 128);
     transition: 0.3s linear;
 }
 main .portfolio .container .contents .list .link_area .box {
+    display: inline-block;
     border: 1px solid #222;
     border-radius: 6px;
     display: flex; flex-flow: column nowrap;
-    width: calc((100% / 2) - 16px);
+    width: calc((100% / 3) - 16px);
     padding: 20px 10px;  
     height: 180px;
     box-shadow: 10px 10px 0 #222;
@@ -246,48 +269,158 @@ main .portfolio .container .contents .list .link_area .box .top {
     display: flex; justify-content: space-between; align-items: center;
     position: relative; padding: 13px;
 }
-main .portfolio .container .contents .list .link_area .box .top .logo {}
-main .portfolio .container .contents .list .link_area .box .top .logo img {
-    height: 30px;
-}
+main .portfolio .container .contents .list .link_area .box .top .logo {height: 30px;}
 main .portfolio .container .contents .list .link_area .box .top .arrow {
-    position: relative; 
-    display: flex; flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
+    width: 30px
 }
-main .portfolio .container .contents .list .link_area .box .top .arrow img {width: 30px}
 main .portfolio .container .contents .list .link_area .box .comment {
     padding: 10px;
 }
 main .portfolio .container .contents .list .link_area .box .comment p:nth-child(1) {
-    font-weight: 700; font-size: 2rem;
+    font-weight: 700; font-size: 1.65rem;
     margin-bottom: 5px;
 }
-main .portfolio .container .contents .list .link_area .box .comment p:nth-child(2) {}
+main .portfolio .container .contents .list .link_area .box .comment p:nth-child(2) {
+    font-size: 0.875rem;
+}
 /* profile */
 main .profile {
-    width: 100%; height: 100vh;
-    background: #111;
-    padding: 0 150px;
-}
-main .profile .about_title {
+    height: 100vh;
     width: 100%;
-    margin: 0 auto;
-    margin-bottom: 100px;
+    background-color: #111;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 90px;
+    padding: 100px 150px;
 }
-main .profile .about_title h1 {
-    font-size: 8rem;
-    padding-top: 150px;
-    color: #fff;
+main .profile .pro_left {
+    width: 50%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
 }
-main .profile .contaienr {display: flex;}
-main .profile .contaienr .left_img {}
-main .profile .contaienr .left_img img {}
-main .profile .contaienr .info { margin-left: 200px;}
-main .profile .contaienr .info .skill {}
-main .profile .contaienr .info .skill h3 {
-    color: #fff; font-size: 3.5rem;
+main .profile .pro_left h2 {
+color: #fff;
+font-size: 4.8rem;
+letter-spacing: 0.04rem;
+text-align: center;
 }
-main .profile .contaienr .info .skill a {}
-main .profile .contaienr .info .skill a img {height: 50px; margin-right: 5px;}
+main .profile .pro_left p:nth-child(2) {
+margin-top: 20px;
+margin-bottom: 20px;
+color: #fff;
+font-size: 1.6rem;
+text-align: center;
+}
+main .profile .pro_left h3 {
+color: #fff;
+font-size: 2.8rem;
+text-align: center;
+}
+main .profile .pro_left p:nth-child(4) {
+margin-top: 20px;
+color: #fff;
+font-size: 1.125rem;
+text-align: center;
+font-weight: 200;
+line-height: 2.1rem;
+}
+main .profile .pro_left p:nth-child(5) {
+text-align: center;
+}
+main .profile .pro_left p:nth-child(5) img {
+padding: 30px 0 20px;
+}
+main .profile .pro_right {
+width: 50%;
+}
+main .profile .pro_right h2 {
+color: #fff;
+font-size: 4.8rem;
+letter-spacing: 0.04rem;
+text-align: center;
+}
+main .profile .pro_right p {
+text-align: center;
+color: #f0f0f0;
+font-size: 0.875rem;
+padding-top: 20px;
+}
+main .profile .pro_right .skill_box {
+padding-top: 20px;
+margin: 0 auto;
+width: 50%;
+display: grid;
+grid-template-areas: "g1 g2 g3" "g4 g5 g6" "g7 g8 g9" "g10 g11 g12";
+}
+main .profile .pro_right .skill_box img {
+width: 100px;
+border-radius: 12px;
+margin-bottom: 13px;
+}
+main .skill_pop {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.87);
+    z-index: 300;
+}
+main .skill_pop .skill_box_bg {
+display: flex;
+flex-flow: column nowrap;
+justify-content: center;
+align-items: center;
+}
+main .skill_pop .skill_box_bg > div[class^=skill_] {
+display: flex;
+flex-flow: column nowrap;
+justify-content: center;
+align-items: center;
+position: absolute;
+right: 200px;
+top: 220px;
+background-color: #fff;
+border-radius: 20px;
+width: 560px;
+height: 580px;
+overflow: hidden;
+}
+main .skill_pop .skill_box_bg > div[class^=skill_] img {
+width: 200px;
+border-radius: 50%;
+padding-bottom: 30px;
+display: block;
+margin: 0 auto;
+}
+main .skill_pop .skill_box_bg > div[class^=skill_] .en_title {
+display: block;
+font-weight: 600;
+color: #4d5ad6;
+font-size: 1.25rem;
+margin-bottom: 8px;
+text-align: center;
+}
+main .skill_pop .skill_box_bg > div[class^=skill_] .ko_title {
+font-weight: 600;
+color: #4d5ad6;
+font-size: 1.75rem;
+margin-bottom: 16px;
+text-align: center;
+display: block;
+}
+main .skill_pop .skill_box_bg > div[class^=skill_] .text_contents {
+padding: 16px 40px;
+}
+main .skill_pop .skill_box_bg > div[class^=skill_] .text_contents span {
+display: block;
+text-align: left;
+}
+
+.display_none {
+display: none !important;
+}
