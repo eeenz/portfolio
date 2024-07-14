@@ -109,6 +109,80 @@ body {
             position: relative; top:0; /* 초기값설정 */
             height: 100vh;
             transition: all 0.3s;
+            .main_homepage_info {
+                .main_homepage {
+                    background-color: #222;
+                    padding: 117px 130px 72px;
+                  }
+                  .main_home_text {
+                    display: flex;
+                    flex-flow: row nowrap;
+                    justify-content: space-between;
+                    align-items: flex-start;
+                    width: 100%;
+                  }
+                  .main_homep_t h2 {
+                    color: #fff;
+                    font-size: 60px;
+                    font-weight: 700;
+                  }
+                  .main_homep_s {
+                    padding-left: 30px;
+                  }
+                  .main_homep_s h3 {
+                    font-size: 48px;
+                    color: #6788ff;
+                  }
+                  .main_homep_s h4 {
+                    font-size: 48px;
+                    color: #6788ff;
+                    margin-bottom: 43px;
+                  }
+                  .main_homep_s h5 {
+                    font-size: 20px;
+                    color: #fff;
+                    max-width: 860px;
+                    font-weight: 300;
+                    margin-bottom: 49px;
+                    line-height: 150%;
+                    padding-right: 100px;
+                  }
+                  .main_homep_s p {
+                    font-weight: 400;
+                    color: #fff;
+                  }
+                  .main_homepage_area {
+                    max-width: 1600px;
+                    display: flex;
+                    margin-top: 49px;
+                  }
+                  .homepage_thumb {
+                    margin-right: 20px;
+                  }
+                  .homepage_thumb:last-child {
+                    margin-right: 0;
+                  }
+                  .homepage_info {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: flex-start;
+                    background-color: #000;
+                    padding: 20px;
+                  }
+                  .homepage_info .homep_left h3 {
+                    font-size: 18px;
+                    color: #fff;
+                    font-weight: 600;
+                    margin-bottom: 15px;
+                  }
+                  .homepage_info .homep_left p {
+                    color: #fff;
+                    font-weight: 300;
+                  }
+                  .homep_right {
+                    max-width: 40px;
+                  }
+            }
             .menu_info {
                 background-color: $gray;
                 position: fixed;
