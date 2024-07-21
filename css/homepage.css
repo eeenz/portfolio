@@ -1,0 +1,107 @@
+.main_homepage01 {
+  width: 100%;
+}
+.homepage_area {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-top: 90px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+.home_title {
+  width: 100%;
+}
+.home_title h1 {
+  text-align: center;
+  font-size: 32px;
+  color: #111;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+.home_sub_title {
+  width: 100%;
+}
+.home_sub_title h2 {
+  font-size: 24px;
+  color: #111;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.home_title_link {
+  border-top: 1px solid #aaa;
+  border-bottom: 1px solid #aaa;
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.home_title_link p {
+  font-size: 18px;
+  font-weight: 500;
+  color: #111;
+  margin-right: 30px;
+}
+.home_title_link p::after {
+  width: 1px;
+  height: 15px;
+  background-color: #333;
+  content: "";
+  display: inline-block;
+  margin-left: 30px;
+}
+.home_title_link p:last-child::after {
+  display: none;
+}
+.home_info {
+  margin-top: 30px;
+  width: 100%;
+}
+.home_info a {
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #6788ff;
+  color: #fff;
+  width: 200px;
+  border-radius: 30px;
+  margin-bottom: 30px;
+  font-weight: 400;
+  font-size: 16px;
+  text-decoration: none;
+}
+.home_info a img {
+  width: 40px;
+}
+.home_info a:hover {
+  background-color: #6788ff;
+  font-weight: 700;
+  color:#222;
+  transition: all 0.4s;
+}
+.home_info p:nth-of-type(1),.home_info p:nth-of-type(3) {
+  font-weight: 600;
+  font-size: 14px;
+  color: #111;
+  margin-top: 40px;
+  line-height: 150%;
+  letter-spacing: -0.03em;
+}
+.home_info p:nth-of-type(2),.home_info p:nth-of-type(4)  {
+  font-weight: 400;
+  font-size: 14px;
+  color: #111;
+  line-height: 150%;
+  letter-spacing: -0.05em;
+  padding-bottom: 40px;
+  margin-bottom: 40px;
+  border-bottom: 1px solid #aaa;
+  letter-spacing: -0.03em;
+}
+.home_img {
+  padding-top: 20px;
+}
+.home_img img {
+  width: 100%;
+}

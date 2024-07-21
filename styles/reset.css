@@ -19,6 +19,7 @@ address,details,mark,time,video,img,summary,div {
     font-family: 'DM Sans', 'Noto Sans KR', 'NewYork', sans-serif;
     font-weight:400;
     letter-spacing: -0.02rem;
+    text-decoration: none;
 }
 ul,ol,li {list-style:none;}
 button {cursor:pointer; background: 0; border: 0;}

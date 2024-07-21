@@ -1,0 +1,84 @@
+.main_homepage01 {
+  width: 100%;
+
+  .homepage_area {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-top: 90px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+
+    .home_title {
+      h1 {
+        text-align: center;
+        font-size: 32px;
+        color: #111;
+        font-weight: 700;
+        margin-bottom: 50px;
+      }
+    }
+    .home_sub_title {
+      h2 {
+        font-size: 24px;
+        color: #111;
+        font-weight: 700;
+        margin-bottom: 20px;
+      }
+      .home_title_link {
+        border-top: 1px solid #aaa;
+        border-bottom: 1px solid #aaa;
+        padding: 20px 10px;
+        display: flex;
+        align-items: center;
+        p {
+          font-size: 18px;
+          font-weight: 500;
+          color:#111;
+          margin-right: 30px;
+        }
+        p::before {
+          width: 1px;
+          height: 10px;
+          background-color: #333;
+          content: ""
+        }
+        p:last-child::before {
+          display: none;
+        }
+      }
+    }
+    .home_info {
+      a {
+        padding: 10px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: $blue;
+        color:#fff;
+        margin-bottom: 10px
+        
+        img {
+          width: 50px;
+        }
+      }
+      p:nth-of-type(1) {
+        font-weight: 600;
+        font-size: 18px;
+        color:#111;
+      }
+      p:nth-of-type(2) {
+        font-weight: 400;
+        font-size: 16px;
+        color:#111;
+        line-height: 150%;
+        letter-spacing: -0.05em;
+      }
+    }
+    .home_img {
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
