@@ -101,6 +101,8 @@
 }
 .home_img {
   padding-top: 20px;
+  border: 1px solid #aaa;
+  margin-bottom: 70px;
 }
 .home_img img {
   width: 100%;

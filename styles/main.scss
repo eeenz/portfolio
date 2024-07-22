@@ -111,8 +111,12 @@ body {
             transition: all 0.3s;
             .main_homepage_info {
                 .main_homepage {
-                    background-color: #222;
+                    // background-color: #222;
                     padding: 117px 130px 72px;
+                    background-image: url(/images/group_d/homepage_bg.jpg);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;
                   }
                   .main_home_text {
                     display: flex;
