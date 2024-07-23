@@ -188,6 +188,21 @@ body {
                             left: 0;
                             transition: all 0.4s linear;
                         }
+                        &:nth-of-type(4)&::after {
+                            background-color: rgba(0, 0, 0, 0.9);
+                            content: "준비중입니다.";
+                            color:#fff;
+                            font-size: 30px;
+                            line-height: 430px;
+                            width: 100%;
+                            height: 100%;
+                            text-align: center;
+                            position: absolute;
+                            z-index: 2;
+                            top: 0;
+                            left: 0;
+                            transition: all 0.4s linear;
+                        }
                     }
                     a {
                         overflow: hidden;

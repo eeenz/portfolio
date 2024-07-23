@@ -32,4 +32,13 @@ document.querySelectorAll('a').forEach(link => {
         }
     });
 });
-/* ---------------------- 구분선 -------------------------- */       
+/* ---------------------- 구분선 -------------------------- */      
+// 프로젝트 소개에 버튼 클릭시 준비중입니다 팝업
+const btn_homep = document.querySelector('.homepage_thumb .home_alr')
+console.log(btn_homep)
+btn_homep[4].addEventListener('click',()=>{
+    alert('준비중 입니다. 조금만 기다려주세요 😊🙏')
+})
+// btn_virens_intro.addEventListener('click',()=>{
+//     alert('준비중입니다. 조금만 기다려주세요 😊🙏')
+// })
