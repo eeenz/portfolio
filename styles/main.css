@@ -188,7 +188,7 @@ body main .wrap .main_homepage_info .homepage_thumb a:hover::after {
   left: 0;
   transition: all 0.4s linear;
 }
-body main .wrap .main_homepage_info .homepage_thumb a:nth-of-type(4):hover::after {
+body main .wrap .main_homepage_info .homepage_thumb a:hover:nth-of-type(4)::after {
   background-color: rgba(0, 0, 0, 0.9);
   content: "준비중입니다.";
   color: #fff;
@@ -235,6 +235,126 @@ body main .wrap .main_homepage_info .homep_right {
 }
 body main .wrap .main_homepage_info .homep_right img {
   width: 30px;
+}
+body main .wrap .main_naver_place .place_area {
+  padding: 117px 240px 72px 130px;
+  background-image: url(/images/group_d/bg3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+body main .wrap .main_naver_place .main_home_text {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+}
+body main .wrap .main_naver_place .main_homep_t h2 {
+  color: #fff;
+  font-size: 60px;
+  font-weight: 700;
+}
+body main .wrap .main_naver_place .main_homep_s {
+  padding-left: 30px;
+  margin-right: 40px;
+}
+body main .wrap .main_naver_place .main_homep_s h3 {
+  font-size: 48px;
+  color: #6788ff;
+}
+body main .wrap .main_naver_place .main_homep_s h4 {
+  font-size: 48px;
+  color: #6788ff;
+  margin-bottom: 43px;
+}
+body main .wrap .main_naver_place .main_homep_s h5 {
+  font-size: 16px;
+  color: #fff;
+  max-width: 860px;
+  font-weight: 400;
+  margin-bottom: 40px;
+  line-height: 150%;
+  padding-right: 100px;
+}
+body main .wrap .main_naver_place .main_homep_s h5 em {
+  color: #6788FF;
+}
+body main .wrap .main_naver_place .main_homep_s p {
+  font-weight: 400;
+  color: #f0f0f0;
+  font-size: 14px;
+}
+body main .wrap .main_naver_place .main_place_img {
+  width: 1640px;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 70px;
+}
+body main .wrap .main_naver_place .main_place_img a {
+  width: calc(25% - 10px);
+  margin-bottom: 10px;
+}
+body main .wrap .main_naver_place .main_place_img a img {
+  width: 100%;
+}
+body main .wrap .main_naver_place .main_place_img a:hover img {
+  opacity: 0.7;
+  transition: all 0.5s linear;
+}
+body main .wrap .main_naver_place .homepage_thumb:last-child {
+  margin-right: 0;
+}
+body main .wrap .main_naver_place .homepage_info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 4px;
+}
+body main .wrap .main_naver_place .homepage_info .homep_left h3 {
+  font-size: 18px;
+  color: #111;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+body main .wrap .main_naver_place .homepage_info .homep_left p {
+  color: #111;
+  font-weight: 400;
+}
+body main .wrap .main_naver_place .homep_right {
+  max-width: 40px;
+}
+body main .wrap .main_naver_place .homep_right img {
+  width: 30px;
+}
+body main .wrap .groupd_pop_img {
+  background-color: #202020;
+  width: 100%;
+  padding: 100px 50px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+body main .wrap .groupd_pop_img h2 {
+  color: #fff;
+  font-size: 3.75rem;
+  margin-bottom: 80px;
+  letter-spacing: 0.02rem;
+}
+body main .wrap .groupd_pop_img .popup_area {
+  max-width: 1640px;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+body main .wrap .groupd_pop_img .popup_area img {
+  width: calc(16.6666666667% - 10px);
+  margin-bottom: 10px;
 }
 body main .wrap .menu_info {
   background-color: #f0f0f0;
@@ -918,7 +1038,6 @@ body main .wrap .profile .pro_left h2 {
   text-align: center;
 }
 body main .wrap .profile .pro_left p:nth-child(2) {
-  margin-top: 20px;
   margin-bottom: 20px;
   color: #fff;
   font-size: 1.6rem;
@@ -932,10 +1051,16 @@ body main .wrap .profile .pro_left h3 {
 body main .wrap .profile .pro_left p:nth-child(4) {
   margin-top: 20px;
   color: #fff;
-  font-size: 1.125rem;
+  font-size: 1.2rem;
   text-align: center;
-  font-weight: 200;
+  font-weight: 500;
   line-height: 2.1rem;
+  letter-spacing: 0rem;
+}
+body main .wrap .profile .pro_left p:nth-child(4) em {
+  color: #6788ff;
+  font-weight: 400;
+  font-size: 1rem;
 }
 body main .wrap .profile .pro_left a:nth-child(5) {
   font-size: 1rem;
